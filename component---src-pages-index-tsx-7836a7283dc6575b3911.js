@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkembodied_ai_workshop=self.webpackChunkembodied_ai_workshop||[]).push([[245],{2783:function(e,o,r){r.r(o);var t=r(6540),a=r(4810),s=r(1013);o.default=()=>{const e="2025",o="/cvpr2025/";return t.useEffect((()=>{(0,a.oo)(o)}),[o]),(0,s.Y)("p",null,"Redirecting to ",(0,s.Y)("a",{href:"{targetPage}"},"CVPR ",e)," ...")}}}]);
+//# sourceMappingURL=component---src-pages-index-tsx-7836a7283dc6575b3911.js.map

@@ -1,0 +1,1 @@
+{"version":3,"file":"component---src-pages-cvpr-2021-tsx-f7db50fe334e5dd500f3.js","mappings":"iIAAA,IAAe,IAA0B,mD","sources":["webpack://embodied-ai-workshop/./static/images/cvpr2021/cover.svg"],"sourcesContent":["export default __webpack_public_path__ + \"static/cover-d4b639f05f6f73fc03aabd9350f4f70f.svg\";"],"names":[],"sourceRoot":""}
