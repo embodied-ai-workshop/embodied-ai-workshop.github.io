@@ -474,6 +474,7 @@ let acceptedPapers = [
     "Nikhil Krishnaswamy":[],
     }}
     affiliations={[]}
+    pdf="/papers/2025/1_Real_Time_Multimodal_Process.pdf"
     />,
   <Paper
     title="On the use of Pre-trained Visual Representations in Visuo-Motor Robot Learning"
@@ -487,6 +488,7 @@ let acceptedPapers = [
     "Oisin Mac Aodha":[],
     }}
     affiliations={[]}
+    pdf="/papers/2025/2_On_the_use_of_Pre_trained_Vi.pdf"
     />,
   <Paper
     title="H^3 DP: Triply‑Hierarchical Diffusion Policy for Visuomotor Learning"
@@ -501,6 +503,7 @@ let acceptedPapers = [
     "Huazhe Xu":[],
     }}
     affiliations={[]}
+    pdf="/papers/2025/3_H_3_DP_Triply_Hierarchical_D.pdf"
     />,
   <Paper
     title="Multi-Step Guided Diffusion for Image Restoration on Edge Devices: Toward Lightweight Perception in Embodied AI"
@@ -509,6 +512,7 @@ let acceptedPapers = [
     "Aditya Chakravarty":[],
     }}
     affiliations={[]}
+    pdf="/papers/2025/4_Multi_Step_Guided_Diffusion_.pdf"
     />,
   <Paper
     title="EED: Embodied Environment Description through Robotic Visual Exploration"
@@ -518,6 +522,7 @@ let acceptedPapers = [
     "Asako Kanezaki":[],
     }}
     affiliations={[]}
+    pdf="/papers/2025/5_EED_Embodied_Environment_Des.pdf"
     />,
   <Paper
     title="R-EQA: Retrieval-Augmented Generation for Embodied Question Answering"
@@ -527,6 +532,7 @@ let acceptedPapers = [
     "Minsu Jang":[],
     }}
     affiliations={[]}
+    pdf="/papers/2025/6_R_EQA_Retrieval_Augmented_Ge.pdf"
     />,
   <Paper
     title="Uncertainty Modeling in Autonomous Vehicle Trajectory Prediction: A Comprehensive Survey"
@@ -537,6 +543,7 @@ let acceptedPapers = [
     "Mantek Singh":[],
     }}
     affiliations={[]}
+    pdf="/papers/2025/7_Uncertainty_Modeling_in_Auto.pdf"
     />,
   <Paper
     title="ThinkSafe++: A Semantic Risk Score Framework for Safety-Aware Long-Horizon Planning"
@@ -546,6 +553,7 @@ let acceptedPapers = [
     "Minsu Jang":[],
     }}
     affiliations={[]}
+    pdf="/papers/2025/8_ThinkSafe_A_Semantic_Risk_Sc.pdf"
     />,
   <Paper
     title="View-Imagination: Enhancing Visuomotor Control with Adaptive View Synthesis"
@@ -558,6 +566,7 @@ let acceptedPapers = [
     "Jungwoo Lee":[],
     }}
     affiliations={[]}
+    pdf="/papers/2025/9_View_Imagination_Enhancing_V.pdf"
     />,
   <Paper
     title="Dynamics-Aligned Flow Matching Policy for Robot Learning"
@@ -572,6 +581,7 @@ let acceptedPapers = [
     "Jungwoo Lee":[],
     }}
     affiliations={[]}
+    pdf="/papers/2025/10_Dynamics_Aligned_Flow_Match.pdf"
     />,
   <Paper
     title="Data Augmentation in Diffusion Inversion Space"
@@ -584,6 +594,7 @@ let acceptedPapers = [
     "Chao Ji":[],
     }}
     affiliations={[]}
+    pdf="/papers/2025/11_Data_Augmentation_in_Diffus.pdf"
     />,
   <Paper
     title="Sim2real Image Translation Enables Viewpoint-Robust Policies from Fixed-Camera Datasets"
@@ -594,6 +605,7 @@ let acceptedPapers = [
     "Zsolt Kira":[],
     }}
     affiliations={[]}
+    pdf="/papers/2025/13_Sim2real_Image_Translation_.pdf"
     />,
   <Paper
     title="EmbodiedSplat: Personalized Real-to-Sim-to-Real Navigation with Gaussian Splats from a Mobile Device"
@@ -606,6 +618,7 @@ let acceptedPapers = [
     "Zsolt Kira":[],
     }}
     affiliations={[]}
+    pdf="/papers/2025/14_EmbodiedSplat_Personalized_.pdf"
     />,
   <Paper
     title="Benchmarking Arbitrary Natural Language Tasks in 3D Open Worlds"
@@ -617,6 +630,7 @@ let acceptedPapers = [
     "Dylan Cashman":[],
     }}
     affiliations={[]}
+    pdf="/papers/2025/15_Benchmarking_Arbitrary_Natu.pdf"
     />,
   <Paper
     title="BePo: Efficient Dual Representation for 3D Scene Understanding"
@@ -631,6 +645,7 @@ let acceptedPapers = [
     "Fatih Porikli":[],
     }}
     affiliations={[]}
+    pdf="/papers/2025/17_BePo_Efficient_Dual_Represe.pdf"
     />,
   <Paper
     title="LLM-Enhanced Rapid-Reflex Async-Reflect Framework for Real-Time Decision Making in Dynamically Changing Environments"
@@ -642,6 +657,7 @@ let acceptedPapers = [
     "Weidong Cai":[],
     }}
     affiliations={[]}
+    pdf="/papers/2025/18_LLM_Enhanced_Rapid_Reflex_A.pdf"
     />,
   <Paper
     title="What matters in ImageNav: architecture, pre-training, sim settings, pose"
@@ -652,6 +668,7 @@ let acceptedPapers = [
     "Christian Wolf":[],
     }}
     affiliations={[]}
+    pdf="/papers/2025/19_What_matters_in_ImageNav_ar.pdf"
     />,
   <Paper
     title="Object Retrieval-Guided Vision Language Modeling for Embodied Interaction"
@@ -663,6 +680,7 @@ let acceptedPapers = [
     "Eckehard Steinbach":[],
     }}
     affiliations={[]}
+    pdf="/papers/2025/22_Object_Retrieval_Guided_Vis.pdf"
     />,
   <Paper
     title="MotIF: Motion Instruction Fine-tuning"
@@ -674,6 +692,7 @@ let acceptedPapers = [
     "Yonatan Bisk":[],
     }}
     affiliations={[]}
+    pdf="/papers/2025/23_MotIF_Motion_Instruction_Fi.pdf"
     />,
   ];
   
