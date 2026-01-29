@@ -1390,7 +1390,7 @@ export const query = graphql`
     allSite {
       nodes {
         siteMetadata {
-          cvpr2025 {
+          cvpr2026 {
             organizers {
               name
               imageId
