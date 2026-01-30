@@ -71,6 +71,13 @@ export const OtherYears = (props: { onConference: string }) => (
       content={
         <div>
           <div>
+            {props.onConference === "CVPR 2026" ? (
+              <>CVPR 2026</>
+            ) : (
+              <Link to="/cvpr2026">CVPR 2026</Link>
+            )}
+          </div>
+          <div>
             {props.onConference === "CVPR 2025" ? (
               <>CVPR 2025</>
             ) : (
@@ -118,7 +125,7 @@ export const OtherYears = (props: { onConference: string }) => (
             ) : (
               <Link to="https://medium.com/embodied-artificial-intelligence">EAI Blog</Link>
             )}
-            </div>
+          </div>
         </div>
       }
       trigger="hover"
@@ -169,7 +176,7 @@ export const Header = (props: {
           <div className={style.conference}>{props.conference}</div>
         </div>
         {props.rightSide}
-        <div id="headerContainer" {...props.headerContainer}> 
+        <div id="headerContainer" {...props.headerContainer}>
           <div {...props.imageContent} />
         </div>
       </div>
