@@ -105,7 +105,7 @@ const challengePageMap = {
       ManiSkill-ViTac
     </a>
   ),
-  SMM: (
+  ManipArena: (
     <a href="https://smm-challenge.github.io/" target="_blank">
       Social Mobile Manipulation
     </a>
@@ -653,12 +653,12 @@ export default function Home({ data }) {
       winner: "",
     },
     {
-      challenge: challengePageMap["SMM"],
-      key: "SMM",
-      task: "Social Mobile Manipulation",
+      challenge: challengePageMap["ManipArena"],
+      key: "ManipArena",
+      task: "ManipArena",
       interactiveActions: "✓",
       simulationPlatform: "Infinite World (based on Isaac Sim)",
-      sceneDataset: "SMM Dataset",
+      sceneDataset: "ManipArena Dataset",
       actionSpace: "Continuous",
       observations: "RGB-D",
       stochasticAcuation: "",
@@ -686,7 +686,10 @@ export default function Home({ data }) {
       // headerGradient="linear-gradient(0deg, #1f2f3f, #100b0f)"
       // 2024 variant
       // headerGradient="radial-gradient(#330066, #ff9933)"
-      headerGradient="linear-gradient(0deg, #e2d2b9, #153968)"
+      // headerGradient="linear-gradient(0deg, #e2d2b9, #153968)"
+      // 2026 variant
+      // headerGradient="radial-gradient(#330066, #ff9933)"
+      headerGradient="linear-gradient(0deg, #ba7d58, #203a58)"
 
       headerStyle={css`
           color: ${color.dark.gold10} !important;
@@ -717,27 +720,6 @@ export default function Home({ data }) {
         />
       }
     >
-      <Section title="Attending">
-        <p>
-          The Embodied AI workshop will be held in-person at CVPR 2026 in Denver, Colorado
-          on June TBDth from 8:30 to 5:30 CDT:
-          <ul>
-            <li><b>In-Person:</b> Workshop talks and panels will be held in room TBD from 8:30-noon and 1:30-5:30 CDT.
-            </li>
-            <li><b>Remote:</b>Zoom info for remote CVPR attendees can be found on our official CVPR workshop page when it becomes available.
-              Questions can be asked via Slack at<InlineSlack />
-            </li>
-            <li><b>Posters:</b> Posters will be in TBDD from 12:00 PM to 1:30 PM CDT at boards TBD.
-              Oral presentations will be in room TBD from TBD CDT.
-            </li>
-            <li><b>Printing:</b> Information on poster printing will be available on CVPR's website.</li>
-          </ul>
-          For late-breaking updates from CVPR, see the workshop's CVPR page when it becomes available.
-        </p>
-        <p>
-          <Img fluid={data.workshopLocation.childImageSharp.fluid} alt="Workshop Location" />
-        </p>
-      </Section>
 
       <Section title="Overview">
         <p>
@@ -746,7 +728,8 @@ export default function Home({ data }) {
           such as robots, which learn to creatively solve challenging tasks
           requiring interaction with the environment.
 
-          While this is a tall order, fantastic advances in deep learning and the
+          While this is a tall order, fantastic advances in deep learning,
+          the explosive growth of large language models, and the
           increasing availability of large datasets like ImageNet have enabled
           superhuman performance on a variety of AI tasks previously thought
           intractable. Computer vision, speech recognition and natural language
@@ -799,11 +782,22 @@ export default function Home({ data }) {
           is <b>World Models for Embodied AI:</b> embodied AI agents that create models of the
           world to help them imagine and act, or to help researchers to test and evaluate them.
 
-          The Embodied AI 2026 workshop will be held in conjunction with
-          {" "}<a href="https://cvpr.thecvf.com/Conferences/2026">CVPR 2026</a>{" "}
-          in Denver, Colorado. It will feature a host of invited
-          talks covering a variety of topics in Embodied AI, many exciting
-          Embodied AI challenges, a poster session, and panel discussions.
+          This umbrella theme is divided into three topics:
+          <ul>
+            <li>
+              <b>World Models for Action and Evaluation</b> Explores both dynamics models which
+              incorporate physics and geometry, and video models where dynamics are implicit.
+            </li>
+            <li>
+              <b>The Resurgence of Classic Methods</b> Examining new applications of techniques
+              such as reinforcement learning and model-predictive control to embodied AI.
+            </li>
+            <li>
+              <b>Long-Horizon Embodied Intelligence</b> Explores benchmarks and methods for
+              multi-step tasks, robust testing, and, in particular, safe operation.
+            </li>
+          </ul>
+
 
           For more information on the Embodied AI Workshop series, see our
           {" "}<a href="https://arxiv.org/abs/2210.06849">Retrospectives</a>{" "}
@@ -816,16 +810,40 @@ export default function Home({ data }) {
           entryNumber={1834823104}
         />
       </Section>
+      <Section title="Attending">
+        <p>
+          The Embodied AI 2026 workshop will be held in conjunction with
+          {" "}<a href="https://cvpr.thecvf.com/Conferences/2026">CVPR 2026</a>{" "}
+          in Denver, Colorado. It will feature a host of invited
+          talks covering a variety of topics in Embodied AI, many exciting
+          Embodied AI challenges, a poster session, and panel discussions.
+
+          The Embodied AI workshop will be held in-person with remote options
+          on June TBDth from 8:30 to 5:30 CDT:
+          <ul>
+            <li><b>In-Person:</b> Workshop talks and panels will be held in room TBD from 8:30-noon and 1:30-5:30 CDT.
+            </li>
+            <li><b>Remote:</b> Zoom info for remote CVPR attendees can be found on our official CVPR workshop page when it becomes available.</li>
+            <li><b>Questions:</b> We will have a microphone; also questions (in-person or remote) can be asked via Slack at: <InlineSlack /></li>
+            <li><b>Posters:</b> Posters will be in TBDD from 12:00 PM to 1:30 PM CDT at boards TBD.
+              Oral presentations will be in room TBD from TBD CDT.
+            </li>
+            <li><b>Printing:</b> Information on poster printing will be available on CVPR's website.</li>
+          </ul>
+          For late-breaking updates from CVPR, see the workshop's CVPR page when it becomes available.
+        </p>
+      </Section>
+
       <Section title="Timeline">
-        <Steps progressDot current={1} direction="vertical">
-          <Step title="Workshop Announced" description="January 30th, 2026" />
+        <Steps progressDot current={0} direction="vertical">
+          <Step title="Workshop Announced" description="February 2nd, 2026" />
           <Step
             title="Paper Submission Deadline"
-            description="May, 2026"
+            description="April 3rd, 2026"
           />
           <Step
             title="Paper Notification Deadline"
-            description="June, 2026"
+            description="April 24th, 2026"
           />
           <Step
             title="Challenge Submission Deadlines"
@@ -833,7 +851,7 @@ export default function Home({ data }) {
           />
           <Step
             title="Camera Ready Copy Deadline"
-            description="June, 2026"
+            description="May 15th, 2026"
           />
           <Step
             title="Seventh Annual Embodied AI Workshop at CVPR"
@@ -1312,10 +1330,10 @@ export default function Home({ data }) {
         </p>
       </Section>
       <Section title="Organizers">
-        The Embodied AI 2026 workshop is a joint effort by a large set of
+        The Embodied AI 2026 workshop is a joint effort by many
         researchers from a variety of organizations. Each year, a set of
         lead organizers takes point coordinating with the CVPR conference,
-        backed up by a large team of workshop organizers, challenge organizers,
+        backed up by a team of workshop organizers, challenge organizers,
         and scientific advisors.
         <SubSection title="Lead Organizers">
           <OrganizerPics
@@ -1341,6 +1359,8 @@ export default function Home({ data }) {
             data={data}
           />
         </SubSection>
+        <p>Coming soon...</p>
+
         <SubSection title="Scientific Advisory Board">
           <OrganizerPics
             organizers={data.allSite.nodes[0].siteMetadata.cvpr2026.organizers
@@ -1753,6 +1773,9 @@ export const query = graphql`
       ...FluidImage
     }
     vivanOrg: file(relativePath: { eq: "organizers/Vivan-Amin.jpg" }) {
+      ...FluidImage
+    }
+    peymanOrg: file(relativePath: { eq: "organizers/peyman-moghadam.jpg" }) {
       ...FluidImage
     }
     rachithOrg: file(relativePath: { eq: "organizers/rachith-prakash.png" }) {
