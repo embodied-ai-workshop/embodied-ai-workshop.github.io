@@ -95,19 +95,14 @@ const challengePageMap = {
       ARNOLD
     </a>
   ),
-  HAZARD: (
-    <a href="https://embodied-agi.cs.umass.edu/hazard" target="_blank">
-      HAZARD
-    </a>
-  ),
   ManiSkillViTac: (
     <a href="https://ai-workshops.github.io/maniskill-vitac-challenge-2025/" target="_blank">
       ManiSkill-ViTac
     </a>
   ),
-  ManipArena: (
+  RobotArena: (
     <a href="https://smm-challenge.github.io/" target="_blank">
-      Social Mobile Manipulation
+      RobotArena
     </a>
   ),
 };
@@ -621,7 +616,7 @@ export default function Home({ data }) {
       key: "arnold",
       task: "Language-Grounded Manipulation",
       interactiveActions: "✓",
-      simulationPlatform: "Isaac Sim",
+      platform: "Isaac Sim",
       sceneDataset: "Arnold Dataset",
       observations: "RGB-D, Proprioception",
       actionSpace: "Continuous",
@@ -629,36 +624,24 @@ export default function Home({ data }) {
       winner: "",
     },
     {
-      challenge: challengePageMap["HAZARD"],
-      key: "hazard",
-      task: "Multi-Object Rescue",
-      interactiveActions: "✓",
-      simulationPlatform: "ThreeDWorld",
-      sceneDataset: "HAZARD dataset",
-      observations: "RGB-D, Temperature Sensors, Water Level",
-      actionSpace: "Discrete",
-      stochasticAcuation: "",
-      winner: "",
-    },
-    {
       challenge: challengePageMap["ManiSkillViTac"],
       key: "maniskill-vitac",
-      task: "Vision-Tactile Fusion Manipulation",
+      task: "Vision-Tactile Fusion Bimanual Manipulation",
       interactiveActions: "✓",
-      simulationPlatform: "SAPIEN",
+      platform: "Real Bimanual Robot",
       sceneDataset: "Customized Scenarios",
-      observations: "RGB-D, Proproioception, Tactile Signals",
+      observations: "Wrist Image, Tactile Image, Proprioception",
       actionSpace: "Continuous",
       stochasticAcuation: "",
       winner: "",
     },
     {
-      challenge: challengePageMap["ManipArena"],
-      key: "ManipArena",
-      task: "ManipArena",
+      challenge: challengePageMap["RobotArena"],
+      key: "RobotArena",
+      task: "RobotArena",
       interactiveActions: "✓",
-      simulationPlatform: "Infinite World (based on Isaac Sim)",
-      sceneDataset: "ManipArena Dataset",
+      platform: "Infinite World (based on Isaac Sim)",
+      sceneDataset: "RobotArena Dataset",
       actionSpace: "Continuous",
       observations: "RGB-D",
       stochasticAcuation: "",
@@ -1117,7 +1100,7 @@ export default function Home({ data }) {
             {
               title: (
                 <>
-                  2024 Winner
+                  2026 Winner
                 </>
               ),
               dataIndex: "winner",
@@ -1128,13 +1111,13 @@ export default function Home({ data }) {
             {
               title: (
                 <>
-                  Simulation Platform
+                  Platform
                 </>
               ),
-              dataIndex: "simulationPlatform",
-              key: "simulationPlatform",
+              dataIndex: "platform",
+              key: "platform",
               sorter: (a, b) =>
-                a.simulationPlatform.localeCompare(b.simulationPlatform),
+                a.platform.localeCompare(b.platform),
               sortDirections: ["ascend", "descend"],
               width: 200,
             },
@@ -1225,13 +1208,13 @@ export default function Home({ data }) {
               Embodied AI Solutions
             </li>
             <li>
-              Advances in Simulation
+              World Models for Action and Evaluation
             </li>
             <li>
-              Generative Methods for Embodied AI
+              Classical Methods for Embodied AI
             </li>
             <li>
-              Foundation Models
+              Long-Horizon Embodied Intelligence
             </li>
           </ul>
           as well as themes related to embodied AI in general:
@@ -1246,10 +1229,16 @@ export default function Home({ data }) {
               Embodied Question Answering
             </li>
             <li>
+              Embodied AI Foundation Models
+            </li>
+            <li>
               Embodied Vision &amp; Language
             </li>
             <li>
               Language Model Planning
+            </li>
+            <li>
+              Advances in Simulation for Embodied AI
             </li>
           </ul>
           Accepted papers will be presented as posters or spotlight talks at the
