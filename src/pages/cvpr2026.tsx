@@ -1348,7 +1348,6 @@ export default function Home({ data }) {
             data={data}
           />
         </SubSection>
-        <p>Coming soon...</p>
 
         <SubSection title="Scientific Advisory Board">
           <OrganizerPics
@@ -1802,6 +1801,27 @@ export const query = graphql`
     }
     huanLing: file(relativePath: { eq: "cvpr2025/huan-ling.png" }) {
       ...FaceThumbnail
+    }
+    yizhouOrg: file(relativePath: { eq: "organizers/yizhou.jpg" }) {
+      ...FluidImage
+    }
+    ruiOrg: file(relativePath: { eq: "organizers/Rui_Chen.jpg" }) {
+      ...FluidImage
+    }
+    chaoyiOrg: file(relativePath: { eq: "organizers/Chaoyi_Liu.jpg" }) {
+      ...FluidImage
+    }
+    chuanyuOrg: file(relativePath: { eq: "organizers/Chuanyu_Li.jpg" }) {
+      ...FluidImage
+    }
+    rongxuanOrg: file(relativePath: { eq: "organizers/Rongxuan_Zhang.jpg" }) {
+      ...FluidImage
+    }
+    shaoweiOrg: file(relativePath: { eq: "organizers/Shaowei_Cui.png" }) {
+      ...FluidImage
+    }
+    wenxuanOrg: file(relativePath: { eq: "organizers/Wenxuan_Ma.jpg" }) {
+      ...FluidImage
     }
     
     # Other pictures
