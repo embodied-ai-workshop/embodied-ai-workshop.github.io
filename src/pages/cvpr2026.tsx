@@ -100,9 +100,9 @@ const challengePageMap = {
       ManiSkill-ViTac
     </a>
   ),
-  RobotArena: (
+  ManipArena: (
     <a href="https://smm-challenge.github.io/" target="_blank">
-      RobotArena
+      ManipArena
     </a>
   ),
 };
@@ -636,14 +636,14 @@ export default function Home({ data }) {
       winner: "",
     },
     {
-      challenge: challengePageMap["RobotArena"],
-      key: "RobotArena",
-      task: "RobotArena",
+      challenge: challengePageMap["ManipArena"],
+      key: "ManipArena",
+      task: "Desktop and Mobile Manipulation",
       interactiveActions: "✓",
-      platform: "Infinite World (based on Isaac Sim)",
-      sceneDataset: "RobotArena Dataset",
+      platform: "Isaac Lab Arena (simulation), UR, Franka, ARX, Spatiotemporal AI Arm, x2robot Arm",
+      sceneDataset: "Custom Dataset",
       actionSpace: "Continuous",
-      observations: "RGB-D",
+      observations: "RGB, joint angles, joint torques",
       stochasticAcuation: "",
       winner: "",
     },
@@ -1821,6 +1821,30 @@ export const query = graphql`
       ...FluidImage
     }
     wenxuanOrg: file(relativePath: { eq: "organizers/Wenxuan_Ma.jpg" }) {
+      ...FluidImage
+    }
+    rongtaoOrg: file(relativePath: { eq: "organizers/rongtao_xu.jpg" }) {
+      ...FluidImage
+    }
+    xiaodanOrg: file(relativePath: { eq: "organizers/Xiaodan_Liang.jpg" }) {
+      ...FluidImage
+    }
+    mengOrg: file(relativePath: { eq: "organizers/unknown.png" }) {
+      ...FluidImage
+    }
+    yuOrg: file(relativePath: { eq: "organizers/unknown.png" }) {
+      ...FluidImage
+    }
+    haoyuOrg: file(relativePath: { eq: "organizers/unknown.png" }) {
+      ...FluidImage
+    }
+    maOrg: file(relativePath: { eq: "organizers/unknown.png" }) {
+      ...FluidImage
+    }
+    ivanOrg: file(relativePath: { eq: "organizers/ivan_laptev.jpg" }) {
+      ...FluidImage
+    }
+    ianOrg: file(relativePath: { eq: "organizers/ian_reid_crop.jpg" }) {
       ...FluidImage
     }
     
