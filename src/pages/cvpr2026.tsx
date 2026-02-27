@@ -1829,22 +1829,25 @@ export const query = graphql`
     xiaodanOrg: file(relativePath: { eq: "organizers/Xiaodan_Liang.jpg" }) {
       ...FluidImage
     }
-    mengOrg: file(relativePath: { eq: "organizers/unknown.png" }) {
+    mengOrg: file(relativePath: { eq: "organizers/Meng_Cao.jpg" }) {
       ...FluidImage
     }
-    yuOrg: file(relativePath: { eq: "organizers/unknown.png" }) {
+    yuOrg: file(relativePath: { eq: "organizers/Yu_Sun.jpg" }) {
       ...FluidImage
     }
-    haoyuOrg: file(relativePath: { eq: "organizers/unknown.png" }) {
+    haoyuOrg: file(relativePath: { eq: "organizers/Haoyu_Zhu.png" }) {
       ...FluidImage
     }
-    maOrg: file(relativePath: { eq: "organizers/unknown.png" }) {
+    maOrg: file(relativePath: { eq: "organizers/Ma_Liang.jpg" }) {
       ...FluidImage
     }
     ivanOrg: file(relativePath: { eq: "organizers/ivan_laptev.jpg" }) {
       ...FluidImage
     }
-    ianOrg: file(relativePath: { eq: "organizers/ian_reid_crop.jpg" }) {
+    ianOrg: file(relativePath: { eq: "organizers/ian_reid.jpg" }) {
+      ...FluidImage
+    }
+    qianOrg: file(relativePath: { eq: "organizers/qian_wang.png" }) {
       ...FluidImage
     }
     
