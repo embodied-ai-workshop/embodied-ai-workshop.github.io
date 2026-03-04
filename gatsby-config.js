@@ -102,7 +102,7 @@ cvpr2026metadata = {
       name: "Ran Gong",
       oc: true,
       lo: false,
-      organization: "UCLA",
+      organization: "RAI",
       sab: false,
       site: "https://nikepupu.github.io/",
     },
@@ -306,6 +306,16 @@ cvpr2026metadata = {
       sab: false,
       site: "https://mbzuai.ac.ae/study/faculty/ian-reid/",
     },
+    {
+      challenge: false,
+      imageId: "heewon",
+      name: "Heewon Kim",
+      oc: true,
+      lo: false,
+      organization: "SSU",
+      sab: false,
+      site: "https://sites.google.com/view/kimheewon",
+    }, 
 
   ]
 };
@@ -619,7 +629,7 @@ cvpr2025metadata = {
       name: "Ran Gong",
       oc: true,
       lo: false,
-      organization: "RAI Institute",
+      organization: "UCLA",
       sab: false,
       site: "https://nikepupu.github.io/",
     },
