@@ -101,7 +101,7 @@ const challengePageMap = {
     </a>
   ),
   ManipArena: (
-    <a href="https://smm-challenge.github.io/" target="_blank">
+    <a href="" target="_blank">
       ManipArena
     </a>
   ),
