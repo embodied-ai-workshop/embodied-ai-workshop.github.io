@@ -96,7 +96,7 @@ const challengePageMap = {
     </a>
   ),
   ManiSkillViTac: (
-    <a href="https://ai-workshops.github.io/maniskill-vitac-challenge-2025/" target="_blank">
+    <a href="https://callmeray.github.io/Mani_ViTac_Challenge_2026_page/" target="_blank">
       ManiSkill-ViTac
     </a>
   ),
@@ -1845,6 +1845,9 @@ export const query = graphql`
       ...FluidImage
     }
     ianOrg: file(relativePath: { eq: "organizers/ian_reid.jpg" }) {
+      ...FluidImage
+    }
+    heewonOrg: file(relativePath: { eq: "organizers/heewon_kim.jpg" }) {
       ...FluidImage
     }
     qianOrg: file(relativePath: { eq: "organizers/qian_wang.png" }) {
