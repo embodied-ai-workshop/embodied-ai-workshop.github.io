@@ -101,7 +101,7 @@ const challengePageMap = {
     </a>
   ),
   ManipArena: (
-    <a href="" target="_blank">
+    <a href="https://maniparena.x2robot.com/" target="_blank">
       ManipArena
     </a>
   ),
