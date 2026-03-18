@@ -268,16 +268,6 @@ cvpr2026metadata = {
     },
     {
       challenge: true,
-      imageId: "haoyu",
-      name: "Haoyu Zhu",
-      oc: false,
-      lo: false,
-      organization: "",
-      sab: false,
-      site: "",
-    },
-    {
-      challenge: true,
       imageId: "ma",
       name: "Ma Liang",
       oc: false,
