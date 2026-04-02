@@ -818,11 +818,11 @@ export default function Home({ data }) {
       </Section>
 
       <Section title="Timeline">
-        <Steps progressDot current={0} direction="vertical">
+        <Steps progressDot current={1} direction="vertical">
           <Step title="Workshop Announced" description="February 2nd, 2026" />
           <Step
             title="Paper Submission Deadline"
-            description="April 3rd, 2026"
+            description={<><s>April 3rd</s>  <b>April 15th</b>, 2026</>}
           />
           <Step
             title="Paper Notification Deadline"
