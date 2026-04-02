@@ -822,11 +822,11 @@ export default function Home({ data }) {
           <Step title="Workshop Announced" description="February 2nd, 2026" />
           <Step
             title="Paper Submission Deadline"
-            description={<><s>April 3rd</s>  <b>April 15th</b>, 2026</>}
+            description={<><s>April 3rd</s>  <b>May 15th</b>, 2026</>}
           />
           <Step
             title="Paper Notification Deadline"
-            description="April 24th, 2026"
+            description={<><s>April 24th</s>  <b>May 27th</b>, 2026</>}
           />
           <Step
             title="Challenge Submission Deadlines"
@@ -834,7 +834,7 @@ export default function Home({ data }) {
           />
           <Step
             title="Camera Ready Copy Deadline"
-            description="May 15th, 2026"
+            description={<><s>May 15th</s>  <b>June 1st</b>, 2026</>}
           />
           <Step
             title="Seventh Annual Embodied AI Workshop at CVPR"
