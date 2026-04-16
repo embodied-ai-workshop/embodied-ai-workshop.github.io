@@ -802,7 +802,7 @@ export default function Home({ data }) {
           Embodied AI challenges, a poster session, and panel discussions.
 
           The Embodied AI workshop will be held in-person with remote options
-          on June TBDth from 8:30 to 5:30 CDT:
+          on June 4th from 8:30 to 5:30 CDT:
           <ul>
             <li><b>In-Person:</b> Workshop talks and panels will be held in room TBD from 8:30-noon and 1:30-5:30 CDT.
             </li>
@@ -844,7 +844,7 @@ export default function Home({ data }) {
                   Denver, Colorado
                 </a>{" "}
                 <br />
-                June, 2026
+                June 4th, 2026
                 <br />
                 <span
                   css={css`
@@ -1256,7 +1256,7 @@ export default function Home({ data }) {
         </p>
         <SubSection title="Submission">
           <p>
-            The submission deadline will close in May (
+            The submission deadline will close May 15th, 2026 (
             Anywhere on Earth - for clarity, 00:01 in GMT as computed by OpenReview).
             Papers should be no longer than 2 pages (excluding references) and styled
             in the{" "}
@@ -1266,15 +1266,15 @@ export default function Home({ data }) {
             <ul>
               <li>
                 <a href="https://openreview.net/group?id=thecvf.com/CVPR/2026/Workshop/EAI">
-                  Paper submissions will close in May 2026.
+                  Paper submissions will close May 15th, 2026.
                 </a>
               </li>
               <li>
-                Notifications will be sent in June 2026.
+                Notifications will be sent May 27th 2026.
                 {/* The <a href="https://openreview.net/group?id=thecvf.com/CVPR/2023/Workshop/EAI">paper submission link is LIVE.</a> */}
               </li>
               <li>
-                Camera-ready copies of accepted papers will be due in June 2026.
+                Camera-ready copies of accepted papers will be due June 1st, 2026.
               </li>
             </ul>
 
