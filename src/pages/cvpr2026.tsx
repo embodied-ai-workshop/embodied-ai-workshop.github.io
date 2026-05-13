@@ -930,6 +930,13 @@ export default function Home({ data }) {
               <Time time="10:30 - 11:00 AM CDT" />
               <br />
               Location: Room TBD
+              <Speaker
+                organizations={["Cornell University"]}
+                name="Tapomayukh Bhattacharjee"
+                fixedImg={data.tapomayukhBhattacharjee.childImageSharp.fixed}
+                noMargin={true}
+              />
+
             </Timeline.Item>
 
             <Timeline.Item>
@@ -940,6 +947,12 @@ export default function Home({ data }) {
               <Time time="11:00 - 11:30 AM CDT" />
               <br />
               Location: Room TBD
+              <Speaker
+                organizations={["ETH Zurich"]}
+                name="Stefan Leutenegger"
+                fixedImg={data.stefanLeutenegger.childImageSharp.fixed}
+                noMargin={true}
+              />
             </Timeline.Item>
 
             <Timeline.Item>
@@ -950,6 +963,12 @@ export default function Home({ data }) {
               <Time time="11:30 AM - 12:00 PM CDT" />
               <br />
               Location: Room TBD
+              <Speaker
+                organizations={["Google DeepMind"]}
+                name="Lewis Chiang"
+                fixedImg={data.lewisChiang.childImageSharp.fixed}
+                noMargin={true}
+              />
             </Timeline.Item>
 
             <Timeline.Item>
@@ -971,6 +990,12 @@ export default function Home({ data }) {
               <Time time="1:30 - 2:00 PM CDT" />
               <br />
               Location: Room TBD
+              <Speaker
+                organizations={["Google DeepMind"]}
+                name="Ruiqi Gao"
+                fixedImg={data.ruiqiGao.childImageSharp.fixed}
+                noMargin={true}
+              />
             </Timeline.Item>
 
             <Timeline.Item>
@@ -981,6 +1006,12 @@ export default function Home({ data }) {
               <Time time="2:00 - 2:30 PM CDT" />
               <br />
               Location: Room TBD
+              <Speaker
+                organizations={["BIGAI"]}
+                name="Siyuan Huang"
+                fixedImg={data.siyuanHuang.childImageSharp.fixed}
+                noMargin={true}
+              />
             </Timeline.Item>
 
             <Timeline.Item>
@@ -1001,6 +1032,12 @@ export default function Home({ data }) {
               <Time time="3:00 - 3:30 PM CDT" />
               <br />
               Location: Room TBD
+              <Speaker
+                organizations={["Microsoft Research Asia"]}
+                name="Jiaolong Yang"
+                fixedImg={data.jiaolongYang.childImageSharp.fixed}
+                noMargin={true}
+              />
             </Timeline.Item>
             <Timeline.Item>
               <b>Industry Talk - Microsoft Research</b>
@@ -1809,6 +1846,24 @@ export const query = graphql`
       ...FaceThumbnail
     }
     jiayunWang: file(relativePath: { eq: "cvpr2025/jiayun-wang.jpg" }) {
+      ...FaceThumbnail
+    }
+    lewisChiang: file(relativePath: { eq: "cvpr2026/lewis-chiang.png" }) {
+      ...FaceThumbnail
+    }
+    tapomayukhBhattacharjee: file(relativePath: { eq: "cvpr2026/tapomayukh-bhattacharjee.jpg" }) {
+      ...FaceThumbnail
+    }
+    stefanLeutenegger: file(relativePath: { eq: "cvpr2026/stefan-leutenegger.jpg" }) {
+      ...FaceThumbnail
+    }
+    siyuanHuang: file(relativePath: { eq: "cvpr2026/siyuan-huang.png" }) {
+      ...FaceThumbnail
+    }
+    ruiqiGao: file(relativePath: { eq: "cvpr2026/ruiqi-gao.png" }) {
+      ...FaceThumbnail
+    }
+    jiaolongYang: file(relativePath: { eq: "cvpr2026/jiaolong-yang.jpg" }) {
       ...FaceThumbnail
     }
     huanLing: file(relativePath: { eq: "cvpr2025/huan-ling.png" }) {
