@@ -923,19 +923,19 @@ export default function Home({ data }) {
             </Timeline.Item>
 
             <Timeline.Item>
-              <b>Invited Talk - TBD</b>
+              <b>Invited Talk - Tapomayukh Bhattacharjee, Cornell University</b>
               <br />
-              <i>Title: TBD</i>
+              <i>Title: Long-Horizon EmbodiedAI</i>
               <br />
               <Time time="10:30 - 11:00 AM CDT" />
               <br />
-              Location: Room 101D
+              Location: Room TBD
             </Timeline.Item>
 
             <Timeline.Item>
-              <b>Invited Talk - TBD</b>
+              <b>Invited Talk - Stefan Leutenegger, ETH Zurich</b>
               <br />
-              <i>Title: TBD</i>
+              <i>Title: The Resurgence of Classic Methods</i>
               <br />
               <Time time="11:00 - 11:30 AM CDT" />
               <br />
@@ -943,7 +943,7 @@ export default function Home({ data }) {
             </Timeline.Item>
 
             <Timeline.Item>
-              <b>Invited Talk - TBD</b>
+              <b>Invited Talk - Lewis Chiang, Google DeepMind</b>
               <br />
               <i>Title: TBD</i>
               <br />
@@ -964,9 +964,9 @@ export default function Home({ data }) {
             </Timeline.Item>
 
             <Timeline.Item>
-              <b>Invited Talk - TBD</b>
+              <b>Invited Talk - Ruiqi Gao, Google DeepMind</b>
               <br />
-              <i>Title: TBD</i>
+              <i>Title: World Models for Embodied AI</i>
               <br />
               <Time time="1:30 - 2:00 PM CDT" />
               <br />
@@ -974,9 +974,9 @@ export default function Home({ data }) {
             </Timeline.Item>
 
             <Timeline.Item>
-              <b>Invited Talk - TBD</b>
+              <b>Invited Talk - Siyuan Huang, BIGAI</b>
               <br />
-              <i>Title: TBD</i>
+              <i>Title: World Models for Action and Evaluation</i>
               <br />
               <Time time="2:00 - 2:30 PM CDT" />
               <br />
@@ -994,26 +994,18 @@ export default function Home({ data }) {
             </Timeline.Item>
 
             <Timeline.Item>
-              <b>Invited Talk - TBD</b>
+              <b>Invited Talk - Jiaolong Yang, Microsoft Research Asia</b>
               <br />
-              <i>Title: TBD</i>
-              <br />
-              <Time time="2:30 - 3:00 PM CDT" />
-              <br />
-              Location: Room TBD
-            </Timeline.Item>
-            <Timeline.Item>
-              <b>Invited Talk - TBD</b>
-              <br />
-              <i>Title: TBD</i>
+              <i>Title: 3D Computer Vision and Spatial AI</i>
               <br />
               <Time time="3:00 - 3:30 PM CDT" />
               <br />
               Location: Room TBD
             </Timeline.Item>
-
             <Timeline.Item>
-              <b>Accepted Paper Highlights</b>
+              <b>Industry Talk - Microsoft Research</b>
+              <br />
+              <i>Title: TBD</i>
               <br />
               <Time time="3:30 - 4:00 PM CDT" />
               <br />
@@ -1021,7 +1013,7 @@ export default function Home({ data }) {
             </Timeline.Item>
 
             <Timeline.Item>
-              <b>Invited Speaker Panel</b>
+              <b>Accepted Paper Highlights</b>
               <br />
               <Time time="4:00 - 4:30 PM CDT" />
               <br />
@@ -1029,11 +1021,31 @@ export default function Home({ data }) {
             </Timeline.Item>
 
             <Timeline.Item>
-              <b>Debate - TBD</b>
+              <b>Invited Speaker Panel</b>
               <br />
               <Time time="4:30 - 5:00 PM CDT" />
               <br />
               Location: Room TBD
+              <Speaker
+                organizations={["Logical Robotics"]}
+                name="Moderator - Anthony Francis"
+                fixedImg={data.anthony.childImageSharp.fixed}
+                noMargin={true}
+              />
+            </Timeline.Item>
+
+            <Timeline.Item>
+              <b>Debate - Long-Horizon Safety in Embodied AI</b>
+              <br />
+              <Time time="5:00 - 5:30 PM CDT" />
+              <br />
+              Location: Room TBD
+              <Speaker
+                organizations={["Logical Robotics"]}
+                name="Moderator - Anthony Francis"
+                fixedImg={data.anthony.childImageSharp.fixed}
+                noMargin={true}
+              />
             </Timeline.Item>
 
             <Timeline.Item>
