@@ -936,13 +936,16 @@ export default function Home({ data }) {
                 fixedImg={data.tapomayukhBhattacharjee.childImageSharp.fixed}
                 noMargin={true}
               />
-
+              <p>Bio: Tapomayukh "Tapo" Bhattacharjee is an Assistant Professor in the Department of Computer Science at Cornell University where he directs the EmPRISE Lab (https://emprise.cs.cornell.edu/). He completed his Ph.D. in Robotics from Georgia Institute of Technology and was an NIH Ruth L. Kirschstein NRSA postdoctoral research associate in Computer Science & Engineering at the University of Washington. His primary research interests are in the area of physical robot caregiving and physical human-robot interaction. He is the recipient of TRI Young Faculty Researcher Award'24, NSF CAREER Award'23, AFCEA 40 under 40 Award'22, and his work has won Best Systems Paper Award at HRI’26, Best Paper Award at RSS’25, Best Paper and Student Paper Award Finalist and Best HRI Paper Award Finalist at ICRA’25, Best Systems Paper Award Finalist at HRI'24, Best Demo Award at HRI'24, Best RoboCup Paper Award at IROS’22, Best Paper Award Finalist and ABB Best Student Paper Award Finalist at IROS’22, Best Technical Advances Paper Award at HRI'19, and Best Demonstration Award at NeurIPS’18. His work has also been featured in many media outlets including the BBC, Reuters, New York Times, IEEE Spectrum, and GeekWire and his robot-assisted feeding work was selected to be one of the best interactive designs of 2019 by Fast Company. </p>
+              <Abstract
+                text="Abstract: TBD"
+              />
             </Timeline.Item>
 
             <Timeline.Item>
               <b>Invited Talk - Stefan Leutenegger, ETH Zurich</b>
               <br />
-              <i>Title: The Resurgence of Classic Methods</i>
+              <i>Title: Spatial AI and Robot Learning for the Real World</i>
               <br />
               <Time time="11:00 - 11:30 AM CDT" />
               <br />
@@ -952,6 +955,10 @@ export default function Home({ data }) {
                 name="Stefan Leutenegger"
                 fixedImg={data.stefanLeutenegger.childImageSharp.fixed}
                 noMargin={true}
+              />
+              <p>Bio: Prof. Dr. Stefan Leutenegger is an Associate Professor in the Department of Mechanical and Process Engineering of ETH Zurich.</p>
+              <Abstract
+                text="Abstract: TBD"
               />
             </Timeline.Item>
 
@@ -969,6 +976,11 @@ export default function Home({ data }) {
                 fixedImg={data.lewisChiang.childImageSharp.fixed}
                 noMargin={true}
               />
+              <p>Bio: Lewis Chiang is a Research Scientist at Google DeepMind, where he works on Gemini Robotics. His research focuses on developing real-time robot agents. Prior to joining Google DeepMind, Lewis worked at Waymo, where he worked on motion prediction and planning.</p>
+              <Abstract
+                text="Abstract: TBD"
+              />
+
             </Timeline.Item>
 
             <Timeline.Item>
@@ -996,12 +1008,16 @@ export default function Home({ data }) {
                 fixedImg={data.ruiqiGao.childImageSharp.fixed}
                 noMargin={true}
               />
+              <p>Bio: I am a Research Scientist at Google DeepMind. I am mainly interested in generative models and representation learning. My recent research focus is to construct powerful generative AI models that can comprehend, generate, and reason with multi-modal data, including natural language, images, videos and 3D. I obtained my Ph.D. from UCLA advised by Song-Chun Zhu and Ying Nian Wu. Prior to that, I received my B.S. degree of Statistics from Peking University..</p>
+              <Abstract
+                text="Abstract: TBD"
+              />
             </Timeline.Item>
 
             <Timeline.Item>
               <b>Invited Talk - Siyuan Huang, BIGAI</b>
               <br />
-              <i>Title: World Models for Action and Evaluation</i>
+              <i>Title: Understand the 3D World for Humanoid Robots</i>
               <br />
               <Time time="2:00 - 2:30 PM CDT" />
               <br />
@@ -1011,6 +1027,10 @@ export default function Home({ data }) {
                 name="Siyuan Huang"
                 fixedImg={data.siyuanHuang.childImageSharp.fixed}
                 noMargin={true}
+              />
+              <p>Bio: I am a Research Scientist at Beijing Institute for General Artificial Intelligence (BIGAI), where I direct the Center of Embodied AI and Robotics. I received my Ph.D. from Department of Statistics at University of California, Los Angeles (UCLA). During my Ph.D., I have interned at DeepMind and Facebook Reality Lab. Before UCLA, I graduated from Tsinghua University with a Bachelors in Department of Automation. My research interests lie in computer vision, robotics, machine learning, and cognition. My long-term goal is to build general-purpose intelligent agents that could understand and interact with the 3D environment like or even beyond humans. I like developing generalizable robotic models, especially the unified models for solving the perception, interaction, control, learning, and planning problem. I am currently focusing on general topics in 3D scene understanding, embodied AI, humanoid robots, and dexterous manipulation.</p>
+              <Abstract
+                text="Abstract: TBD"
               />
             </Timeline.Item>
 
@@ -1037,6 +1057,11 @@ export default function Home({ data }) {
                 name="Jiaolong Yang"
                 fixedImg={data.jiaolongYang.childImageSharp.fixed}
                 noMargin={true}
+              />
+              <p>Bio:
+                I'm currently a Principal Researcher and Research Manager in the Microsoft Research Asia (MSRA) Lab located in Beijing, China. I lead a team to do cutting-edge research in 3D Computer Vision and Spatial AI, including but not limited to 3D reconstruction and generation, human face & body modelling, immersive AI experiences, and physical AI embodiments. Part of my research has been transfered to various Microsoft Products such as Microsoft Copilot, Microsoft Azure AI, Microsoft Cognitive Services, Windows Hello, Microsoft XiaoIce, etc. I serve regularly as the program committee member/reviewer for major computer vision conferences and journals including CVPR/ICCV/ECCV/TPAMI/IJCV, the Area Chair for CVPR/ICCV/ECCV/WACV/MM, and the Associate Editor for the prestigious journal International Journal on Computer Vision (IJCV). Before joining MSRA in Sep 2016, I received dual PhD degrees from The Australian National University (Advisor: Prof. Hongdong Li) and Beijing Institute of Technology (Advisor: Prof. Yunde Jia) in 2016. I was a research intern at MSRA from Nov 2015 to Mar 2016 (Mentor: Dr. Gang Hua), and was an visiting graduate researcher at Harvard University between Jul 2016 and Aug 2016 (Host: Dr. Deqing Sun). I received the Excellent PhD Thesis Award from China Society of Image and Graphics (中国图形图像学会优博) in 2017 (4 recipients in China), the Best Paper Award of IEEE VR 2022, and the Best Paper Honorable Mention Award of IEEE VR 2025..</p>
+              <Abstract
+                text="Abstract: TBD"
               />
             </Timeline.Item>
             <Timeline.Item>
