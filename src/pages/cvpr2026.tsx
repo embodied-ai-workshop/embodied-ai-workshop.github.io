@@ -818,7 +818,7 @@ export default function Home({ data }) {
       </Section>
 
       <Section title="Timeline">
-        <Steps progressDot current={2} direction="vertical">
+        <Steps progressDot current={4} direction="vertical">
           <Step title="Workshop Announced" description="February 2nd, 2026" />
           <Step
             title="Paper Submission Deadline"
@@ -900,8 +900,6 @@ export default function Home({ data }) {
 
             <Timeline.Item>
               <b>Challenge Presentations - Winning Methods</b>
-              <br />
-              (TBD)
               <br />
               <Time time="9:00 - 10:00 AM CDT" />
               <br />
@@ -1126,7 +1124,7 @@ export default function Home({ data }) {
             <Timeline.Item>
               <b>Accepted Paper Highlights</b>
               <br />
-              <Time time="4:00 - 4:30 PM CDT" />
+              <Time time="4:30 - 5:00 PM CDT" />
               <br />
               Location: Room 107
             </Timeline.Item>
