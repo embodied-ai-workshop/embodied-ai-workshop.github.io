@@ -818,7 +818,7 @@ export default function Home({ data }) {
       </Section>
 
       <Section title="Timeline">
-        <Steps progressDot current={1} direction="vertical">
+        <Steps progressDot current={2} direction="vertical">
           <Step title="Workshop Announced" description="February 2nd, 2026" />
           <Step
             title="Paper Submission Deadline"
@@ -846,6 +846,7 @@ export default function Home({ data }) {
                 <br />
                 June 4th, 2026
                 <br />
+                Room 107
                 <span
                   css={css`
                     color: ${color.gray7};
@@ -865,8 +866,8 @@ export default function Home({ data }) {
 
         Embodied AI will be a <b>hybrid</b> workshop, with both in-person talks and streaming via zoom.
         <ul>
-          <li><b>Workshop Talks: 8:30AM-5:30PM CDT - Room TBD</b></li>
-          <li><b>Poster Session: 12:00PM-1:30PM CDT - TBD boards TBD</b></li>
+          <li><b>Workshop Talks: 8:30AM-5:30PM CDT - Room 107</b></li>
+          <li><b>Poster Session: 12:00PM-1:30PM CDT - Exhibit Hall A</b></li>
         </ul>
         Zoom information can be found for CVPR attendees on
         our official CVPR workshop page when it becomes available.
@@ -888,7 +889,7 @@ export default function Home({ data }) {
               <br />
               <Time time="8:30 - 9:00 AM CDT" />
               <br />
-              Location: Room TBD
+              Location: Room 107
               <Speaker
                 organizations={["Logical Robotics"]}
                 name="Anthony Francis"
@@ -904,7 +905,7 @@ export default function Home({ data }) {
               <br />
               <Time time="9:00 - 10:00 AM CDT" />
               <br />
-              Location: Room TBD
+              Location: Room 107
               <Speaker
                 organizations={["CSIRO"]}
                 name="Moderator - David Hall"
@@ -919,7 +920,7 @@ export default function Home({ data }) {
               <br />
               <Time time="10:00 - 10:30 AM CDT" />
               <br />
-              Location: Room TBD
+              Location: Room 107
             </Timeline.Item>
 
             <Timeline.Item>
@@ -929,7 +930,7 @@ export default function Home({ data }) {
               <br />
               <Time time="10:30 - 11:00 AM CDT" />
               <br />
-              Location: Room TBD
+              Location: Room 107
               <Speaker
                 organizations={["Cornell University"]}
                 name="Tapomayukh Bhattacharjee"
@@ -949,7 +950,7 @@ export default function Home({ data }) {
               <br />
               <Time time="11:00 - 11:30 AM CDT" />
               <br />
-              Location: Room TBD
+              Location: Room 107
               <Speaker
                 organizations={["ETH Zurich"]}
                 name="Stefan Leutenegger"
@@ -969,7 +970,7 @@ export default function Home({ data }) {
               <br />
               <Time time="11:30 AM - 12:00 PM CDT" />
               <br />
-              Location: Room TBD
+              Location: Room 107
               <Speaker
                 organizations={["Google DeepMind"]}
                 name="Lewis Chiang"
@@ -988,9 +989,9 @@ export default function Home({ data }) {
               <br />
               <Time time="12:00 PM - 1:30 PM CDT" />
               <br />
-              Location: TBD
+              Location: Exhibit Hall A
               <ul>
-                <li>EAI's posters will be at boards TBD.</li>
+                <li>EAI's posters will be at boards to be determined.</li>
               </ul>
             </Timeline.Item>
 
@@ -1001,7 +1002,7 @@ export default function Home({ data }) {
               <br />
               <Time time="1:30 - 2:00 PM CDT" />
               <br />
-              Location: Room TBD
+              Location: Room 107
               <Speaker
                 organizations={["Google DeepMind"]}
                 name="Ruiqi Gao"
@@ -1021,7 +1022,7 @@ export default function Home({ data }) {
               <br />
               <Time time="2:00 - 2:30 PM CDT" />
               <br />
-              Location: Room TBD
+              Location: Room 107
               <Speaker
                 organizations={["BIGAI"]}
                 name="Siyuan Huang"
@@ -1035,13 +1036,23 @@ export default function Home({ data }) {
             </Timeline.Item>
 
             <Timeline.Item>
-              <b>Invited Talk - TBD</b>
+              <b>Invited Talk - Yilun Du, Harvard</b>
               <br />
-              <i>Title: TBD</i>
+              <i>Title: World Models for Robot Manipulation and Planning</i>
               <br />
               <Time time="2:30 - 3:00 PM CDT" />
               <br />
-              Location: Room TBD
+              Location: Room 107
+              <p>Bio: I am an Assistant Professor at Harvard in the Kempner Institute and CS, where I run the Embodied Minds lab. I received my PhD at MIT EECS, advised by Prof. Leslie Kaelbling, Prof. Tomas Lozano-Perez and Prof. Joshua B. Tenenbaum. Previously, I also obtained my bachelor's degree from MIT, was a research fellow at OpenAI, a senior research scientist at Google DeepMind, and got a gold medal at the International Biology Olympiad. My research focuses on generative models, decision making, robot learning, embodied agents, and the applications of such tools to scientific domains.</p>
+              <Speaker
+                organizations={["Harvard"]}
+                name="Yilun Du"
+                fixedImg={data.yilunDu.childImageSharp.fixed}
+                noMargin={true}
+              />
+              <Abstract
+                text="Abstract: TBD"
+              />
             </Timeline.Item>
 
             <Timeline.Item>
@@ -1051,7 +1062,7 @@ export default function Home({ data }) {
               <br />
               <Time time="3:00 - 3:30 PM CDT" />
               <br />
-              Location: Room TBD
+              Location: Room 107
               <Speaker
                 organizations={["Microsoft Research Asia"]}
                 name="Jiaolong Yang"
@@ -1059,19 +1070,57 @@ export default function Home({ data }) {
                 noMargin={true}
               />
               <p>Bio:
-                I'm currently a Principal Researcher and Research Manager in the Microsoft Research Asia (MSRA) Lab located in Beijing, China. I lead a team to do cutting-edge research in 3D Computer Vision and Spatial AI, including but not limited to 3D reconstruction and generation, human face & body modelling, immersive AI experiences, and physical AI embodiments. Part of my research has been transfered to various Microsoft Products such as Microsoft Copilot, Microsoft Azure AI, Microsoft Cognitive Services, Windows Hello, Microsoft XiaoIce, etc. I serve regularly as the program committee member/reviewer for major computer vision conferences and journals including CVPR/ICCV/ECCV/TPAMI/IJCV, the Area Chair for CVPR/ICCV/ECCV/WACV/MM, and the Associate Editor for the prestigious journal International Journal on Computer Vision (IJCV). Before joining MSRA in Sep 2016, I received dual PhD degrees from The Australian National University (Advisor: Prof. Hongdong Li) and Beijing Institute of Technology (Advisor: Prof. Yunde Jia) in 2016. I was a research intern at MSRA from Nov 2015 to Mar 2016 (Mentor: Dr. Gang Hua), and was an visiting graduate researcher at Harvard University between Jul 2016 and Aug 2016 (Host: Dr. Deqing Sun). I received the Excellent PhD Thesis Award from China Society of Image and Graphics (中国图形图像学会优博) in 2017 (4 recipients in China), the Best Paper Award of IEEE VR 2022, and the Best Paper Honorable Mention Award of IEEE VR 2025..</p>
+                I'm currently a Principal Researcher and Research Manager in the Microsoft Research Asia (MSRA) Lab located in Beijing, China. I lead a team to do cutting-edge research in 3D Computer Vision and Spatial AI, including but not limited to 3D reconstruction and generation, human face & body modelling, immersive AI experiences, and physical AI embodiments. Part of my research has been transfered to various Microsoft Products such as Microsoft Copilot, Microsoft Azure AI, Microsoft Cognitive Services, Windows Hello, Microsoft XiaoIce, etc. I serve regularly as the program committee member/reviewer for major computer vision conferences and journals including CVPR/ICCV/ECCV/TPAMI/IJCV, the Area Chair for CVPR/ICCV/ECCV/WACV/MM, and the Associate Editor for the prestigious journal International Journal on Computer Vision (IJCV). Before joining MSRA in Sep 2016, I received dual PhD degrees from The Australian National University (Advisor: Prof. Hongdong Li) and Beijing Institute of Technology (Advisor: Prof. Yunde Jia) in 2016. I was a research intern at MSRA from Nov 2015 to Mar 2016 (Mentor: Dr. Gang Hua), and was an visiting graduate researcher at Harvard University between Jul 2016 and Aug 2016 (Host: Dr. Deqing Sun). I received the Excellent PhD Thesis Award from China Society of Image and Graphics (中国图形图像学会优博) in 2017 (4 recipients in China), the Best Paper Award of IEEE VR 2022, and the Best Paper Honorable Mention Award of IEEE VR 2025.</p>
               <Abstract
                 text="Abstract: TBD"
               />
             </Timeline.Item>
             <Timeline.Item>
-              <b>Industry Talk - Microsoft Research</b>
+              <b>Industry Talk - Katja Hoffman and Sara Parisot, Microsoft Research Cambridge</b>
               <br />
-              <i>Title: TBD</i>
+              <i>Title: World and Human Action Models for Gameplay Ideation</i>
               <br />
               <Time time="3:30 - 4:00 PM CDT" />
               <br />
-              Location: Room TBD
+              Location: Room 107
+              <Speaker
+                organizations={["Microsoft Research Cambridge"]}
+                name="Katja Hoffman"
+                fixedImg={data.katjaHoffman.childImageSharp.fixed}
+                noMargin={true}
+              />
+              <p>Bio: I am a Partner Research Manager at Microsoft Research Cambridge, where I co-lead the People-Centric AI research area. My work focuses on generative AI, interactive media, and game intelligence, combining advances in machine learning with human-computer interaction, design, and social science. With my team we aim to create AI systems that empower people through collaboration, creativity, and play – unlocking new forms of interaction and addressing complex real-world challenges. I am passionate about driving interdisciplinary research that shapes the future of AI experiences across productivity, entertainment, and beyond.</p>
+              <Speaker
+                organizations={["Microsoft Research Cambridge"]}
+                name="Sarah Parisot"
+                fixedImg={data.sarahParisot.childImageSharp.fixed}
+                noMargin={true}
+              />
+              <p>Bio: I am a Principal Researcher in the Game Intelligence(opens in new tab) team which develops novel machine learning technology with applications to video games and beyond. My research interests and experience include parameter efficient learning, computer vision and generative AI. My recent work has focused on text-to-image generative models, with an emphasis on controllability and interactivity. Prior to joining Microsoft, I was a Senior Research Scientist and Team Leader at Huawei Noah’s Ark Lab in London.</p>
+              <Abstract
+                text="Abstract: TBD"
+              />
+            </Timeline.Item>
+
+            <Timeline.Item>
+              <b>Invited Talk - Dinesh Jayaraman, UPenn GRASP Lab</b>
+              <br />
+              <i>Title: World Models for Robot Learning</i>
+              <br />
+              <Time time="4:00 - 4:30 PM CDT" />
+              <br />
+              Location: Room 107
+              <p>Bio: I am an associate professor at UPenn’s GRASP lab, with a primary appointment in CIS, and a secondary appointment in ESE. I lead the Perception, Action, and Learning (PennPAL) Research Group, where we work on problems at the intersection of robotics, machine learning, and computer vision.</p>
+              <Speaker
+                organizations={["UPenn GRASP Lab"]}
+                name="Dinesh Jayaraman"
+                fixedImg={data.dineshJayaraman.childImageSharp.fixed}
+                noMargin={true}
+              />
+              <Abstract
+                text="Abstract: TBD"
+              />
+
             </Timeline.Item>
 
             <Timeline.Item>
@@ -1079,29 +1128,16 @@ export default function Home({ data }) {
               <br />
               <Time time="4:00 - 4:30 PM CDT" />
               <br />
-              Location: Room TBD
+              Location: Room 107
             </Timeline.Item>
 
-            <Timeline.Item>
-              <b>Invited Speaker Panel</b>
-              <br />
-              <Time time="4:30 - 5:00 PM CDT" />
-              <br />
-              Location: Room TBD
-              <Speaker
-                organizations={["Logical Robotics"]}
-                name="Moderator - Anthony Francis"
-                fixedImg={data.anthony.childImageSharp.fixed}
-                noMargin={true}
-              />
-            </Timeline.Item>
 
             <Timeline.Item>
               <b>Debate - Long-Horizon Safety in Embodied AI</b>
               <br />
               <Time time="5:00 - 5:30 PM CDT" />
               <br />
-              Location: Room TBD
+              Location: Room 107
               <Speaker
                 organizations={["Logical Robotics"]}
                 name="Moderator - Anthony Francis"
@@ -1113,9 +1149,9 @@ export default function Home({ data }) {
             <Timeline.Item>
               <b>Workshop Concludes</b>
               <br />
-              <Time time="5:00 PM CDT" />
+              <Time time="5:30 PM CDT" />
               <br />
-              Location: Room TBD
+              Location: Room 107
             </Timeline.Item>
           </Timeline>
         </div>
@@ -1874,6 +1910,18 @@ export const query = graphql`
       ...FaceThumbnail
     }
     lewisChiang: file(relativePath: { eq: "cvpr2026/lewis-chiang.png" }) {
+      ...FaceThumbnail
+    }
+    sarahParisot: file(relativePath: { eq: "cvpr2026/sarah-parisot.png" }) {
+      ...FaceThumbnail
+    }
+    yilunDu: file(relativePath: { eq: "cvpr2026/yilun-du.jpg" }) {
+      ...FaceThumbnail
+    }
+    dineshJayaraman: file(relativePath: { eq: "cvpr2026/dinesh-jayaraman.jpg" }) {
+      ...FaceThumbnail
+    }
+    katjaHoffman: file(relativePath: { eq: "cvpr2026/katja-hoffman.jpg" }) {
       ...FaceThumbnail
     }
     tapomayukhBhattacharjee: file(relativePath: { eq: "cvpr2026/tapomayukh-bhattacharjee.jpg" }) {
