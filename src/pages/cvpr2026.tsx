@@ -802,14 +802,14 @@ export default function Home({ data }) {
           Embodied AI challenges, a poster session, and panel discussions.
 
           The Embodied AI workshop will be held in-person with remote options
-          on June 4th from 8:30 to 5:30 CDT:
+          on June 4th from 8:30 to 5:30 MDT:
           <ul>
-            <li><b>In-Person:</b> Workshop talks and panels will be held in room TBD from 8:30-noon and 1:30-5:30 CDT.
+            <li><b>In-Person:</b> Workshop talks and panels will be held in room TBD from 8:30-noon and 1:30-5:30 MDT.
             </li>
             <li><b>Remote:</b> Zoom info for remote CVPR attendees can be found on our official CVPR workshop page when it becomes available.</li>
             <li><b>Questions:</b> We will have a microphone; also questions (in-person or remote) can be asked via Slack at: <InlineSlack /></li>
-            <li><b>Posters:</b> Posters will be in TBDD from 12:00 PM to 1:30 PM CDT at boards TBD.
-              Oral presentations will be in room TBD from TBD CDT.
+            <li><b>Posters:</b> Posters will be in TBDD from 12:00 PM to 1:30 PM MDT at boards TBD.
+              Oral presentations will be in room TBD from TBD MDT.
             </li>
             <li><b>Printing:</b> Information on poster printing will be available on CVPR's website.</li>
           </ul>
@@ -866,9 +866,11 @@ export default function Home({ data }) {
 
         Embodied AI will be a <b>hybrid</b> workshop, with both in-person talks and streaming via zoom.
         <ul>
-          <li><b>Workshop Talks: 8:30AM-5:30PM CDT - Room 107</b></li>
-          <li><b>Poster Session: 12:00PM-1:30PM CDT - Exhibit Hall A</b></li>
+          <li><b>Workshop Talks: 8:30AM-5:30PM MDT - Room 107</b></li>
+          <li><b>Poster Session: 12:00PM-1:30PM MDT - Exhibit Hall A</b></li>
         </ul>
+        Note an earlier version of the website said CDT, but the timezone is MDT, the same as the rest of CVPR.
+        <br />
         Zoom information can be found for CVPR attendees on
         our official CVPR workshop page when it becomes available.
         <br />
@@ -887,7 +889,7 @@ export default function Home({ data }) {
             <Timeline.Item>
               <b>Workshop Introduction: Embodied AI</b>
               <br />
-              <Time time="8:30 - 9:00 AM CDT" />
+              <Time time="8:30 - 9:00 AM MDT" />
               <br />
               Location: Room 107
               <Speaker
@@ -901,7 +903,7 @@ export default function Home({ data }) {
             <Timeline.Item>
               <b>Challenge Presentations - Winning Methods</b>
               <br />
-              <Time time="9:00 - 10:00 AM CDT" />
+              <Time time="9:00 - 10:00 AM MDT" />
               <br />
               Location: Room 107
               <Speaker
@@ -916,26 +918,26 @@ export default function Home({ data }) {
             <Timeline.Item>
               <b>Challenge Q&A</b>
               <br />
-              <Time time="10:00 - 10:30 AM CDT" />
+              <Time time="10:00 - 10:30 AM MDT" />
               <br />
               Location: Room 107
             </Timeline.Item>
 
             <Timeline.Item>
-              <b>Invited Talk - Tapomayukh Bhattacharjee, Cornell University</b>
+              <b>Invited Talk - Siyuan Huang, BIGAI</b>
               <br />
-              <i>Title: Long-Horizon EmbodiedAI</i>
+              <i>Title: Understand the 3D World for Humanoid Robots</i>
               <br />
-              <Time time="10:30 - 11:00 AM CDT" />
+              <Time time="10:30 - 11:00 AM MDT" />
               <br />
               Location: Room 107
               <Speaker
-                organizations={["Cornell University"]}
-                name="Tapomayukh Bhattacharjee"
-                fixedImg={data.tapomayukhBhattacharjee.childImageSharp.fixed}
+                organizations={["BIGAI"]}
+                name="Siyuan Huang"
+                fixedImg={data.siyuanHuang.childImageSharp.fixed}
                 noMargin={true}
               />
-              <p>Bio: Tapomayukh "Tapo" Bhattacharjee is an Assistant Professor in the Department of Computer Science at Cornell University where he directs the EmPRISE Lab (https://emprise.cs.cornell.edu/). He completed his Ph.D. in Robotics from Georgia Institute of Technology and was an NIH Ruth L. Kirschstein NRSA postdoctoral research associate in Computer Science & Engineering at the University of Washington. His primary research interests are in the area of physical robot caregiving and physical human-robot interaction. He is the recipient of TRI Young Faculty Researcher Award'24, NSF CAREER Award'23, AFCEA 40 under 40 Award'22, and his work has won Best Systems Paper Award at HRI’26, Best Paper Award at RSS’25, Best Paper and Student Paper Award Finalist and Best HRI Paper Award Finalist at ICRA’25, Best Systems Paper Award Finalist at HRI'24, Best Demo Award at HRI'24, Best RoboCup Paper Award at IROS’22, Best Paper Award Finalist and ABB Best Student Paper Award Finalist at IROS’22, Best Technical Advances Paper Award at HRI'19, and Best Demonstration Award at NeurIPS’18. His work has also been featured in many media outlets including the BBC, Reuters, New York Times, IEEE Spectrum, and GeekWire and his robot-assisted feeding work was selected to be one of the best interactive designs of 2019 by Fast Company. </p>
+              <p>Bio: I am a Research Scientist at Beijing Institute for General Artificial Intelligence (BIGAI), where I direct the Center of Embodied AI and Robotics. I received my Ph.D. from Department of Statistics at University of California, Los Angeles (UCLA). During my Ph.D., I have interned at DeepMind and Facebook Reality Lab. Before UCLA, I graduated from Tsinghua University with a Bachelors in Department of Automation. My research interests lie in computer vision, robotics, machine learning, and cognition. My long-term goal is to build general-purpose intelligent agents that could understand and interact with the 3D environment like or even beyond humans. I like developing generalizable robotic models, especially the unified models for solving the perception, interaction, control, learning, and planning problem. I am currently focusing on general topics in 3D scene understanding, embodied AI, humanoid robots, and dexterous manipulation.</p>
               <Abstract
                 text="Abstract: TBD"
               />
@@ -946,7 +948,7 @@ export default function Home({ data }) {
               <br />
               <i>Title: Spatial AI and Robot Learning for the Real World</i>
               <br />
-              <Time time="11:00 - 11:30 AM CDT" />
+              <Time time="11:00 - 11:30 AM MDT" />
               <br />
               Location: Room 107
               <Speaker
@@ -966,7 +968,7 @@ export default function Home({ data }) {
               <br />
               <i>Title: TBD</i>
               <br />
-              <Time time="11:30 AM - 12:00 PM CDT" />
+              <Time time="11:30 AM - 12:00 PM MDT" />
               <br />
               Location: Room 107
               <Speaker
@@ -985,12 +987,9 @@ export default function Home({ data }) {
             <Timeline.Item>
               <b>Lunch / Accepted Papers Poster Session</b>
               <br />
-              <Time time="12:00 PM - 1:30 PM CDT" />
+              <Time time="12:00 PM - 1:30 PM MDT" />
               <br />
-              Location: Exhibit Hall A
-              <ul>
-                <li>EAI's posters will be at boards to be determined.</li>
-              </ul>
+              Location: Exhibit Hall A, Boards 262 - 276
             </Timeline.Item>
 
             <Timeline.Item>
@@ -998,7 +997,7 @@ export default function Home({ data }) {
               <br />
               <i>Title: World Models for Embodied AI</i>
               <br />
-              <Time time="1:30 - 2:00 PM CDT" />
+              <Time time="1:30 - 2:00 PM MDT" />
               <br />
               Location: Room 107
               <Speaker
@@ -1014,20 +1013,20 @@ export default function Home({ data }) {
             </Timeline.Item>
 
             <Timeline.Item>
-              <b>Invited Talk - Siyuan Huang, BIGAI</b>
+              <b>Invited Talk - Tapomayukh Bhattacharjee, Cornell University</b>
               <br />
-              <i>Title: Understand the 3D World for Humanoid Robots</i>
+              <i>Title: Long-Horizon EmbodiedAI</i>
               <br />
-              <Time time="2:00 - 2:30 PM CDT" />
+              <Time time="2:30 - 3:00 PM MDT" />
               <br />
               Location: Room 107
               <Speaker
-                organizations={["BIGAI"]}
-                name="Siyuan Huang"
-                fixedImg={data.siyuanHuang.childImageSharp.fixed}
+                organizations={["Cornell University"]}
+                name="Tapomayukh Bhattacharjee"
+                fixedImg={data.tapomayukhBhattacharjee.childImageSharp.fixed}
                 noMargin={true}
               />
-              <p>Bio: I am a Research Scientist at Beijing Institute for General Artificial Intelligence (BIGAI), where I direct the Center of Embodied AI and Robotics. I received my Ph.D. from Department of Statistics at University of California, Los Angeles (UCLA). During my Ph.D., I have interned at DeepMind and Facebook Reality Lab. Before UCLA, I graduated from Tsinghua University with a Bachelors in Department of Automation. My research interests lie in computer vision, robotics, machine learning, and cognition. My long-term goal is to build general-purpose intelligent agents that could understand and interact with the 3D environment like or even beyond humans. I like developing generalizable robotic models, especially the unified models for solving the perception, interaction, control, learning, and planning problem. I am currently focusing on general topics in 3D scene understanding, embodied AI, humanoid robots, and dexterous manipulation.</p>
+              <p>Bio: Tapomayukh "Tapo" Bhattacharjee is an Assistant Professor in the Department of Computer Science at Cornell University where he directs the EmPRISE Lab (https://emprise.cs.cornell.edu/). He completed his Ph.D. in Robotics from Georgia Institute of Technology and was an NIH Ruth L. Kirschstein NRSA postdoctoral research associate in Computer Science & Engineering at the University of Washington. His primary research interests are in the area of physical robot caregiving and physical human-robot interaction. He is the recipient of TRI Young Faculty Researcher Award'24, NSF CAREER Award'23, AFCEA 40 under 40 Award'22, and his work has won Best Systems Paper Award at HRI’26, Best Paper Award at RSS’25, Best Paper and Student Paper Award Finalist and Best HRI Paper Award Finalist at ICRA’25, Best Systems Paper Award Finalist at HRI'24, Best Demo Award at HRI'24, Best RoboCup Paper Award at IROS’22, Best Paper Award Finalist and ABB Best Student Paper Award Finalist at IROS’22, Best Technical Advances Paper Award at HRI'19, and Best Demonstration Award at NeurIPS’18. His work has also been featured in many media outlets including the BBC, Reuters, New York Times, IEEE Spectrum, and GeekWire and his robot-assisted feeding work was selected to be one of the best interactive designs of 2019 by Fast Company. </p>
               <Abstract
                 text="Abstract: TBD"
               />
@@ -1038,7 +1037,7 @@ export default function Home({ data }) {
               <br />
               <i>Title: World Models for Robot Manipulation and Planning</i>
               <br />
-              <Time time="2:30 - 3:00 PM CDT" />
+              <Time time="2:30 - 3:00 PM MDT" />
               <br />
               Location: Room 107
               <p>Bio: I am an Assistant Professor at Harvard in the Kempner Institute and CS, where I run the Embodied Minds lab. I received my PhD at MIT EECS, advised by Prof. Leslie Kaelbling, Prof. Tomas Lozano-Perez and Prof. Joshua B. Tenenbaum. Previously, I also obtained my bachelor's degree from MIT, was a research fellow at OpenAI, a senior research scientist at Google DeepMind, and got a gold medal at the International Biology Olympiad. My research focuses on generative models, decision making, robot learning, embodied agents, and the applications of such tools to scientific domains.</p>
@@ -1058,7 +1057,7 @@ export default function Home({ data }) {
               <br />
               <i>Title: 3D Computer Vision and Spatial AI</i>
               <br />
-              <Time time="3:00 - 3:30 PM CDT" />
+              <Time time="3:00 - 3:30 PM MDT" />
               <br />
               Location: Room 107
               <Speaker
@@ -1074,20 +1073,13 @@ export default function Home({ data }) {
               />
             </Timeline.Item>
             <Timeline.Item>
-              <b>Industry Talk - Katja Hoffman and Sara Parisot, Microsoft Research Cambridge</b>
+              <b>Industry Talk - Sara Parisot, Microsoft Research Cambridge</b>
               <br />
-              <i>Title: World and Human Action Models for Gameplay Ideation</i>
+              <i>Title: Building World Models for Creative Use</i>
               <br />
-              <Time time="3:30 - 4:00 PM CDT" />
+              <Time time="3:30 - 4:00 PM MDT" />
               <br />
               Location: Room 107
-              <Speaker
-                organizations={["Microsoft Research Cambridge"]}
-                name="Katja Hoffman"
-                fixedImg={data.katjaHoffman.childImageSharp.fixed}
-                noMargin={true}
-              />
-              <p>Bio: I am a Partner Research Manager at Microsoft Research Cambridge, where I co-lead the People-Centric AI research area. My work focuses on generative AI, interactive media, and game intelligence, combining advances in machine learning with human-computer interaction, design, and social science. With my team we aim to create AI systems that empower people through collaboration, creativity, and play – unlocking new forms of interaction and addressing complex real-world challenges. I am passionate about driving interdisciplinary research that shapes the future of AI experiences across productivity, entertainment, and beyond.</p>
               <Speaker
                 organizations={["Microsoft Research Cambridge"]}
                 name="Sarah Parisot"
@@ -1096,7 +1088,7 @@ export default function Home({ data }) {
               />
               <p>Bio: I am a Principal Researcher in the Game Intelligence(opens in new tab) team which develops novel machine learning technology with applications to video games and beyond. My research interests and experience include parameter efficient learning, computer vision and generative AI. My recent work has focused on text-to-image generative models, with an emphasis on controllability and interactivity. Prior to joining Microsoft, I was a Senior Research Scientist and Team Leader at Huawei Noah’s Ark Lab in London.</p>
               <Abstract
-                text="Abstract: TBD"
+                text="World models offer a path toward interactive, co‑creative systems that support iteration, exploration, and sustained creative control. To be useful to creators, such models must balance expressiveness with practical constraints such as data efficiency, responsiveness, and inference cost. This talk explores the interplay between model considerations and creative intent, including how representation choices, efficiency, and data strategy can shape creative use."
               />
             </Timeline.Item>
 
@@ -1105,7 +1097,7 @@ export default function Home({ data }) {
               <br />
               <i>Title: World Models for Robot Learning</i>
               <br />
-              <Time time="4:00 - 4:30 PM CDT" />
+              <Time time="4:00 - 4:30 PM MDT" />
               <br />
               Location: Room 107
               <p>Bio: I am an associate professor at UPenn’s GRASP lab, with a primary appointment in CIS, and a secondary appointment in ESE. I lead the Perception, Action, and Learning (PennPAL) Research Group, where we work on problems at the intersection of robotics, machine learning, and computer vision.</p>
@@ -1124,7 +1116,7 @@ export default function Home({ data }) {
             <Timeline.Item>
               <b>Accepted Paper Highlights</b>
               <br />
-              <Time time="4:30 - 5:00 PM CDT" />
+              <Time time="4:30 - 5:00 PM MDT" />
               <br />
               Location: Room 107
             </Timeline.Item>
@@ -1133,7 +1125,7 @@ export default function Home({ data }) {
             <Timeline.Item>
               <b>Debate - Long-Horizon Safety in Embodied AI</b>
               <br />
-              <Time time="5:00 - 5:30 PM CDT" />
+              <Time time="5:00 - 5:30 PM MDT" />
               <br />
               Location: Room 107
               <Speaker
@@ -1147,7 +1139,7 @@ export default function Home({ data }) {
             <Timeline.Item>
               <b>Workshop Concludes</b>
               <br />
-              <Time time="5:30 PM CDT" />
+              <Time time="5:30 PM MDT" />
               <br />
               Location: Room 107
             </Timeline.Item>
