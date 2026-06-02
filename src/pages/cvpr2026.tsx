@@ -804,11 +804,11 @@ export default function Home({ data }) {
           The Embodied AI workshop will be held in-person with remote options
           on June 4th from 8:30 to 5:30 MDT:
           <ul>
-            <li><b>In-Person:</b> Workshop talks and panels will be held in room TBD from 8:30-noon and 1:30-5:30 MDT.
+            <li><b>In-Person:</b> Workshop talks and panels will be held in room 107 from 8:30-noon and 1:30-5:30 MDT.
             </li>
             <li><b>Remote:</b> Zoom info for remote CVPR attendees can be found on our official CVPR workshop page when it becomes available.</li>
             <li><b>Questions:</b> We will have a microphone; also questions (in-person or remote) can be asked via Slack at: <InlineSlack /></li>
-            <li><b>Posters:</b> Posters will be in TBDD from 12:00 PM to 1:30 PM MDT at boards TBD.
+            <li><b>Posters:</b> Posters will be in Exhibit Hall A from 12:00 PM to 1:30 PM MDT at boards TBD.
               Oral presentations will be in room TBD from TBD MDT.
             </li>
             <li><b>Printing:</b> Information on poster printing will be available on CVPR's website.</li>
@@ -1402,7 +1402,7 @@ export default function Home({ data }) {
 
       </Section>
       <Section title="Sponsors">
-        <p>The Embodied AI 2025 Workshop is sponsored by the following organizations:</p>
+        <p>The Embodied AI 2026 Workshop is sponsored by the following organizations:</p>
         <p style={{
           display: "flex",
           alignItems: "center",
