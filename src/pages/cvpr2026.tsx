@@ -1402,7 +1402,7 @@ export default function Home({ data }) {
 
       </Section>
       <Section title="Sponsors">
-        <p>The Embodied AI 2025 Workshop is sponsored by the following organizations:</p>
+        <p>The Embodied AI 2026 Workshop is sponsored by the following organizations:</p>
         <p style={{
           display: "flex",
           alignItems: "center",
