@@ -806,7 +806,8 @@ export default function Home({ data }) {
           <ul>
             <li><b>In-Person:</b> Workshop talks and panels will be held in room 107 from 8:45-noon and 1:30-5:30 MDT.
             </li>
-            <li><b>Remote:</b> Zoom info for remote CVPR attendees can be found on our official CVPR workshop page when it becomes available.</li>
+            <li><b>Remote:</b> Zoom info for remote CVPR attendees can be found on
+              {" "}<a href="https://cvpr.thecvf.com/virtual/2026/workshop/36064">our official CVPR workshop page</a>.</li>
             <li><b>Questions:</b> We will have a microphone; also questions (in-person or remote) can be asked via Slack at: <InlineSlack /></li>
             <li><b>Posters:</b> Posters will be in Exhibit Hall A from 12:00 PM to 1:30 PM MDT at boards 262 - 276.
               Oral presentations will be in room 107 from 4:30-5:00 PM MDT.
@@ -868,6 +869,9 @@ export default function Home({ data }) {
         <ul>
           <li><b>Workshop Talks: 8:45AM-5:30PM MDT - Room 107</b></li>
           <li><b>Poster Session: 12:00PM-1:30PM MDT - Exhibit Hall A Boards 262-276</b></li>
+          <li><b>Virtual Sessions:</b>{" "}
+            <a href="https://cvpr.thecvf.com/virtual/2026/workshop/36064">Workshop page</a>{" "}
+            available to registered CVPR attendees.</li>
         </ul>
         Note an earlier version of the website said CDT, but the timezone is MDT, the same as the rest of CVPR.
         <br />
