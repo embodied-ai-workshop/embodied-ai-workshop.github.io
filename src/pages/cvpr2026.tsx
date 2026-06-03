@@ -1052,28 +1052,28 @@ export default function Home({ data }) {
                 noMargin={true}
               />
               <Abstract
-                text="Abstract: TBD"
+                text="Abstract: I'll talk about a couple methods in which world models can be useful for robotics applications. First, I'll talk about how they can be used as policies or imaginations depicting what to do in future steps. I'll talk about how they can be used in action-conditioned simulation and MPC. Finally, I'll talk about how they can be combined with VLMs for long horizon task planning."
               />
             </Timeline.Item>
 
             <Timeline.Item>
-              <b>Invited Talk - Jiaolong Yang, Microsoft Research Asia</b>
+              <b>Invited Talk - Wayne Wu, UCLA</b>
               <br />
-              <i>Title: 3D Computer Vision and Spatial AI</i>
+              <i>Title: From Scaling up to Scaling out: Reality World Simulators for Physical AI</i>
               <br />
               <Time time="3:00 - 3:30 PM MDT" />
               <br />
               Location: Room 107
               <Speaker
-                organizations={["Microsoft Research Asia"]}
-                name="Jiaolong Yang"
-                fixedImg={data.jiaolongYang.childImageSharp.fixed}
+                organizations={["UCLA"]}
+                name="Wayne Wu"
+                fixedImg={data.wayneWu.childImageSharp.fixed}
                 noMargin={true}
               />
               <p>Bio:
-                I'm currently a Principal Researcher and Research Manager in the Microsoft Research Asia (MSRA) Lab located in Beijing, China. I lead a team to do cutting-edge research in 3D Computer Vision and Spatial AI, including but not limited to 3D reconstruction and generation, human face & body modelling, immersive AI experiences, and physical AI embodiments. Part of my research has been transfered to various Microsoft Products such as Microsoft Copilot, Microsoft Azure AI, Microsoft Cognitive Services, Windows Hello, Microsoft XiaoIce, etc. I serve regularly as the program committee member/reviewer for major computer vision conferences and journals including CVPR/ICCV/ECCV/TPAMI/IJCV, the Area Chair for CVPR/ICCV/ECCV/WACV/MM, and the Associate Editor for the prestigious journal International Journal on Computer Vision (IJCV). Before joining MSRA in Sep 2016, I received dual PhD degrees from The Australian National University (Advisor: Prof. Hongdong Li) and Beijing Institute of Technology (Advisor: Prof. Yunde Jia) in 2016. I was a research intern at MSRA from Nov 2015 to Mar 2016 (Mentor: Dr. Gang Hua), and was an visiting graduate researcher at Harvard University between Jul 2016 and Aug 2016 (Host: Dr. Deqing Sun). I received the Excellent PhD Thesis Award from China Society of Image and Graphics (中国图形图像学会优博) in 2017 (4 recipients in China), the Best Paper Award of IEEE VR 2022, and the Best Paper Honorable Mention Award of IEEE VR 2025.</p>
+                I am an AI Researcher in the Department of Computer Science at the University of California, Los Angeles (UCLA), working with Bolei Zhou, and collaborating with Trevor Darrell (UC Berkeley EECS) and Jiaqi Ma (UCLA CEE). I was a Visiting PhD at Nanyang Technological University, working with Chen Change Loy. I received my Ph.D. from the Department of Computer Science and Technology at Tsinghua University. </p>
               <Abstract
-                text="Abstract: TBD"
+                text="Abstract: Recent progress in large language and vision models demonstrates how far we can go by scaling with vast internet-scale data. In contrast, physical AI, agents that perceive and act in the real world, still lags far behind. Today, both academia and industry primarily pursue generalizable physical AI by scaling up: collecting large-scale action–video datasets or training world models that enable interaction through learned environments. However, this paradigm is inherently inefficient and will soon reach a data ceiling. In this talk, I argue for a shift from scaling up to scaling out. I introduce reality world simulators, a new paradigm that converts real-world videos into diverse, interactive simulation environments. Instead of relying on more data collection, this approach expands data through structured reconstruction and recomposition, enabling both higher data efficiency and physically grounded interaction. I will present a three-pronged approach: 1) Scaling out via Digital Twins: reconstructing controllable, interactive environments from monocular videos to support diverse agent exploration. 2) Scaling out via Digital Cousins: disentangling scene structure into compositional elements to generate large-scale variations of real-world environments. 3) Scaling out via Embodied Humans: incorporating realistic human dynamics to improve safety and social compliance in robot learning. Finally, I will outline a roadmap toward building generalizable and safe physical AI systems for open-world deployment."
               />
             </Timeline.Item>
             <Timeline.Item>
@@ -1934,6 +1934,9 @@ export const query = graphql`
       ...FaceThumbnail
     }
     jiaolongYang: file(relativePath: { eq: "cvpr2026/jiaolong-yang.jpg" }) {
+      ...FaceThumbnail
+    }
+    wayneWu: file(relativePath: { eq: "cvpr2026/wayne_wu.jpg" }) {
       ...FaceThumbnail
     }
     huanLing: file(relativePath: { eq: "cvpr2025/huan-ling.png" }) {
