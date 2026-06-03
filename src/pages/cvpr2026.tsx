@@ -802,14 +802,14 @@ export default function Home({ data }) {
           Embodied AI challenges, a poster session, and panel discussions.
 
           The Embodied AI workshop will be held in-person with remote options
-          on June 4th from 8:30 to 5:30 MDT:
+          on June 4th from 8:45 to 5:30 MDT:
           <ul>
-            <li><b>In-Person:</b> Workshop talks and panels will be held in room TBD from 8:30-noon and 1:30-5:30 MDT.
+            <li><b>In-Person:</b> Workshop talks and panels will be held in room 107 from 8:45-noon and 1:30-5:30 MDT.
             </li>
             <li><b>Remote:</b> Zoom info for remote CVPR attendees can be found on our official CVPR workshop page when it becomes available.</li>
             <li><b>Questions:</b> We will have a microphone; also questions (in-person or remote) can be asked via Slack at: <InlineSlack /></li>
-            <li><b>Posters:</b> Posters will be in TBDD from 12:00 PM to 1:30 PM MDT at boards TBD.
-              Oral presentations will be in room TBD from TBD MDT.
+            <li><b>Posters:</b> Posters will be in Exhibit Hall A from 12:00 PM to 1:30 PM MDT at boards 262 - 276.
+              Oral presentations will be in room 107 from 4:30-5:00 PM MDT.
             </li>
             <li><b>Printing:</b> Information on poster printing will be available on CVPR's website.</li>
           </ul>
@@ -818,7 +818,7 @@ export default function Home({ data }) {
       </Section>
 
       <Section title="Timeline">
-        <Steps progressDot current={4} direction="vertical">
+        <Steps progressDot current={5} direction="vertical">
           <Step title="Workshop Announced" description="February 2nd, 2026" />
           <Step
             title="Paper Submission Deadline"
@@ -866,8 +866,8 @@ export default function Home({ data }) {
 
         Embodied AI will be a <b>hybrid</b> workshop, with both in-person talks and streaming via zoom.
         <ul>
-          <li><b>Workshop Talks: 8:30AM-5:30PM MDT - Room 107</b></li>
-          <li><b>Poster Session: 12:00PM-1:30PM MDT - Exhibit Hall A</b></li>
+          <li><b>Workshop Talks: 8:45AM-5:30PM MDT - Room 107</b></li>
+          <li><b>Poster Session: 12:00PM-1:30PM MDT - Exhibit Hall A Boards 262-276</b></li>
         </ul>
         Note an earlier version of the website said CDT, but the timezone is MDT, the same as the rest of CVPR.
         <br />
@@ -889,7 +889,7 @@ export default function Home({ data }) {
             <Timeline.Item>
               <b>Workshop Introduction: Embodied AI</b>
               <br />
-              <Time time="8:30 - 9:00 AM MDT" />
+              <Time time="8:45 - 9:00 AM MDT" />
               <br />
               Location: Room 107
               <Speaker
@@ -924,7 +924,7 @@ export default function Home({ data }) {
             </Timeline.Item>
 
             <Timeline.Item>
-              <b>Invited Talk - Siyuan Huang, BIGAI</b>
+              <b>Invited Talk - Baoxiong Jia, BIGAI</b>
               <br />
               <i>Title: Understand the 3D World for Humanoid Robots</i>
               <br />
@@ -933,11 +933,11 @@ export default function Home({ data }) {
               Location: Room 107
               <Speaker
                 organizations={["BIGAI"]}
-                name="Siyuan Huang"
-                fixedImg={data.siyuanHuang.childImageSharp.fixed}
+                name="Baoxiong Jia"
+                fixedImg={data.baoxiongJia.childImageSharp.fixed}
                 noMargin={true}
               />
-              <p>Bio: I am a Research Scientist at Beijing Institute for General Artificial Intelligence (BIGAI), where I direct the Center of Embodied AI and Robotics. I received my Ph.D. from Department of Statistics at University of California, Los Angeles (UCLA). During my Ph.D., I have interned at DeepMind and Facebook Reality Lab. Before UCLA, I graduated from Tsinghua University with a Bachelors in Department of Automation. My research interests lie in computer vision, robotics, machine learning, and cognition. My long-term goal is to build general-purpose intelligent agents that could understand and interact with the 3D environment like or even beyond humans. I like developing generalizable robotic models, especially the unified models for solving the perception, interaction, control, learning, and planning problem. I am currently focusing on general topics in 3D scene understanding, embodied AI, humanoid robots, and dexterous manipulation.</p>
+              <p>Bio: Hi! I’m Baoxiong, a research scientist at BIGAI. I received my Ph.D in the Department of Computer Science, University of California, Los Angeles (UCLA). My research interests lie in the intersection of computer vision, artificial intelligence, robotics and cognitive science, with a special focus on spatial/temporal reasoning and its application to acting and planning in real world (scene/activity understanding, future prediction, grounded manipulation, etc.). My recent works focus on integrating all my previous research into humanoid robots and make them helpful when I’m old :-) Previously, I obtained my M.S. from UCLA in 2019 and B.S. from Peking University in 2018.</p>
               <Abstract
                 text="Abstract: TBD"
               />
@@ -1073,7 +1073,7 @@ export default function Home({ data }) {
               />
             </Timeline.Item>
             <Timeline.Item>
-              <b>Industry Talk - Sara Parisot, Microsoft Research Cambridge</b>
+              <b>Industry Talk - Sarah Parisot, Microsoft Research Cambridge</b>
               <br />
               <i>Title: Building World Models for Creative Use</i>
               <br />
@@ -1921,6 +1921,9 @@ export const query = graphql`
       ...FaceThumbnail
     }
     siyuanHuang: file(relativePath: { eq: "cvpr2026/siyuan-huang.png" }) {
+      ...FaceThumbnail
+    }
+    baoxiongJia: file(relativePath: { eq: "cvpr2026/baoxiong-jia.jpg" }) {
       ...FaceThumbnail
     }
     ruiqiGao: file(relativePath: { eq: "cvpr2026/ruiqi-gao.png" }) {
