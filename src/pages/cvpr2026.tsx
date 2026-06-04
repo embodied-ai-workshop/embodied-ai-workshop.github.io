@@ -1044,7 +1044,7 @@ export default function Home({ data }) {
               <Time time="2:30 - 3:00 PM MDT" />
               <br />
               Location: Room 107
-              <p>Bio: I am an Assistant Professor at Harvard in the Kempner Institute and CS, where I run the Embodied Minds lab. I received my PhD at MIT EECS, advised by Prof. Leslie Kaelbling, Prof. Tomas Lozano-Perez and Prof. Joshua B. Tenenbaum. Previously, I also obtained my bachelor's degree from MIT, was a research fellow at OpenAI, a senior research scientist at Google DeepMind, and got a gold medal at the International Biology Olympiad. My research focuses on generative models, decision making, robot learning, embodied agents, and the applications of such tools to scientific domains.</p>
+              <p>Bio: I am an Assistant Professor at Harvard in the Kempner Institute and CS, where I run the Embodied Minds lab. I received my PhD at MIT EECS, advised by Prof. Leslie Kaelbling, Prof. Tomas Lozano-Perez and Prof. Joshua B. Tenenbaum. Previously, I also obtained my bachelor's degree from MIT, was a research fellow at OpenAI, and a senior research scientist at Google DeepMind. My research focuses on generative models, decision making, robot learning, embodied agents, and the applications of such tools to scientific domains.</p>
               <Speaker
                 organizations={["Harvard"]}
                 name="Yilun Du"
