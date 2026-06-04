@@ -1019,7 +1019,7 @@ export default function Home({ data }) {
             <Timeline.Item>
               <b>Invited Talk - Tapomayukh Bhattacharjee, Cornell University</b>
               <br />
-              <i>Title: Long-Horizon EmbodiedAI</i>
+              <i>Title: Embodied Intelligence for Physical Contact with Humans: Towards Safe Caregiving Robots in the Real World</i>
               <br />
               <Time time="2:30 - 3:00 PM MDT" />
               <br />
@@ -1032,7 +1032,7 @@ export default function Home({ data }) {
               />
               <p>Bio: Tapomayukh "Tapo" Bhattacharjee is an Assistant Professor in the Department of Computer Science at Cornell University where he directs the EmPRISE Lab (https://emprise.cs.cornell.edu/). He completed his Ph.D. in Robotics from Georgia Institute of Technology and was an NIH Ruth L. Kirschstein NRSA postdoctoral research associate in Computer Science & Engineering at the University of Washington. His primary research interests are in the area of physical robot caregiving and physical human-robot interaction. He is the recipient of TRI Young Faculty Researcher Award'24, NSF CAREER Award'23, AFCEA 40 under 40 Award'22, and his work has won Best Systems Paper Award at HRI’26, Best Paper Award at RSS’25, Best Paper and Student Paper Award Finalist and Best HRI Paper Award Finalist at ICRA’25, Best Systems Paper Award Finalist at HRI'24, Best Demo Award at HRI'24, Best RoboCup Paper Award at IROS’22, Best Paper Award Finalist and ABB Best Student Paper Award Finalist at IROS’22, Best Technical Advances Paper Award at HRI'19, and Best Demonstration Award at NeurIPS’18. His work has also been featured in many media outlets including the BBC, Reuters, New York Times, IEEE Spectrum, and GeekWire and his robot-assisted feeding work was selected to be one of the best interactive designs of 2019 by Fast Company. </p>
               <Abstract
-                text="Abstract: TBD"
+                text="Abstract: Physical contact with humans remains one of the most important and underexplored challenges in embodied AI. To operate safely and effectively in real-world environments shared with humans, robots must reason about and adapt to the diverse behaviors, capabilities, and needs of the people around them. Physical caregiving tasks such as feeding, bathing, and transferring exemplify this challenge, requiring safe physical human-robot interaction in dynamic, unstructured settings. In this talk, I will present research from the EmPRISE Lab on building embodied intelligence for physical contact with humans. I will highlight our work on multimodal contact representations, personalized contact-aware control, and user-context aware robot assistance, as well as lessons from deploying these systems with end users. Together, these efforts provide insights into the representations, learning algorithms, and safety considerations needed for real-world physical caregiving robots."
               />
             </Timeline.Item>
 
