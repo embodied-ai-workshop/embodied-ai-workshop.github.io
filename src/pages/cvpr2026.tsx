@@ -928,22 +928,22 @@ export default function Home({ data }) {
             </Timeline.Item>
 
             <Timeline.Item>
-              <b>Invited Talk - Baoxiong Jia, BIGAI</b>
+              <b>Invited Talk - Siyuan Huang, BIGAI</b>
               <br />
-              <i>Title: Understand the 3D World for Humanoid Robots</i>
+              <i>Title: Understanding the 3D World for General Agents</i>
               <br />
               <Time time="10:30 - 11:00 AM MDT" />
               <br />
               Location: Room 107
               <Speaker
                 organizations={["BIGAI"]}
-                name="Baoxiong Jia"
-                fixedImg={data.baoxiongJia.childImageSharp.fixed}
+                name="Siyuan Huang"
+                fixedImg={data.siyuanHuang.childImageSharp.fixed}
                 noMargin={true}
               />
-              <p>Bio: Hi! I’m Baoxiong, a research scientist at BIGAI. I received my Ph.D in the Department of Computer Science, University of California, Los Angeles (UCLA). My research interests lie in the intersection of computer vision, artificial intelligence, robotics and cognitive science, with a special focus on spatial/temporal reasoning and its application to acting and planning in real world (scene/activity understanding, future prediction, grounded manipulation, etc.). My recent works focus on integrating all my previous research into humanoid robots and make them helpful when I’m old :-) Previously, I obtained my M.S. from UCLA in 2019 and B.S. from Peking University in 2018.</p>
+              <p>Bio: Siyuan Huang is a Research Scientist at the Beijing Institute for General Artificial Intelligence (BIGAI), directing the Center of Embodied AI and Robotics. He received his Ph.D. from the Department of Statistics at the University of California, Los Angeles (UCLA). His research aims to build a general robot capable of understanding and interacting with 3D environments like humans. His research has received multiple awards including the best paper award of CoRL2025 and several workshop best papers.</p>
               <Abstract
-                text="Abstract: TBD"
+                text="Abstract: While current world models exhibit impressive predictive capabilities, their reliance on 2D image sequences masks a critical lack of genuine geometric, spatial, and physical understanding. For general embodied agents to interact reliably with their environments, we must move beyond pixel-level imitation and pursue a native, structural grasp of the three-dimensional world. This talk highlights key insights into bridging this gap by explicitly modeling 3D geometry and scaling spatial reasoning. Specifically, we will discuss how leveraging foundational video models can extract robust spatial priors to enhance comprehensive scene understanding, and how integrating explicit 3D representations—such as Gaussian models—provides the physical grounding necessary for accurate simulation and complex manipulation tasks. Ultimately, shifting from 2D approximations to grounded 3D structures is essential for building world models that truly comprehend the physical reality they operate within."
               />
             </Timeline.Item>
 
