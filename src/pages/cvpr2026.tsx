@@ -970,7 +970,7 @@ export default function Home({ data }) {
             <Timeline.Item>
               <b>Invited Talk - Lewis Chiang, Google DeepMind</b>
               <br />
-              <i>Title: TBD</i>
+              <i>Title: Why Are Robot Agents So Hard?</i>
               <br />
               <Time time="11:30 AM - 12:00 PM MDT" />
               <br />
@@ -1099,7 +1099,7 @@ export default function Home({ data }) {
             <Timeline.Item>
               <b>Invited Talk - Dinesh Jayaraman, UPenn GRASP Lab</b>
               <br />
-              <i>Title: World Models for Robot Learning</i>
+              <i>Title: Coding Agent-Driven Robot Learning</i>
               <br />
               <Time time="4:00 - 4:30 PM MDT" />
               <br />
