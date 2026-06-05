@@ -795,31 +795,31 @@ export default function Home({ data }) {
       </Section>
       <Section title="Attending">
         <p>
-          The Embodied AI 2026 workshop will be held in conjunction with
+          The Embodied AI 2026 workshop was held in conjunction with
           {" "}<a href="https://cvpr.thecvf.com/Conferences/2026">CVPR 2026</a>{" "}
-          in Denver, Colorado. It will feature a host of invited
+          in Denver, Colorado. It featured a host of invited
           talks covering a variety of topics in Embodied AI, many exciting
           Embodied AI challenges, a poster session, and panel discussions.
 
-          The Embodied AI workshop will be held in-person with remote options
+          The Embodied AI workshop was held in-person with remote options
           on June 4th from 8:45 to 5:30 MDT:
           <ul>
-            <li><b>In-Person:</b> Workshop talks and panels will be held in room 107 from 8:45-noon and 1:30-5:30 MDT.
+            <li><b>In-Person:</b> Workshop talks and panels were held in room 107 from 8:45-noon and 1:30-5:30 MDT.
             </li>
             <li><b>Remote:</b> Zoom info for remote CVPR attendees can be found on
               {" "}<a href="https://cvpr.thecvf.com/virtual/2026/workshop/36064">our official CVPR workshop page</a>.</li>
             <li><b>Questions:</b> We will have a microphone; also questions (in-person or remote) can be asked via Slack at: <InlineSlack /></li>
-            <li><b>Posters:</b> Posters will be in Exhibit Hall A from 12:00 PM to 1:30 PM MDT at boards 262 - 276.
-              Oral presentations will be in room 107 from 4:30-5:00 PM MDT.
+            <li><b>Posters:</b> Posters were held in Exhibit Hall A from 12:00 PM to 1:30 PM MDT at boards 262 - 276.
+              Oral presentations were held in room 107 from 4:30-5:00 PM MDT.
             </li>
-            <li><b>Printing:</b> Information on poster printing will be available on CVPR's website.</li>
+            <li><b>Printing:</b> Information on poster printing was available on CVPR's website.</li>
           </ul>
-          For late-breaking updates from CVPR, see the workshop's CVPR page when it becomes available.
+          For late-breaking updates from CVPR, see the workshop's CVPR page.
         </p>
       </Section>
 
       <Section title="Timeline">
-        <Steps progressDot current={5} direction="vertical">
+        <Steps progressDot current={6} direction="vertical">
           <Step title="Workshop Announced" description="February 2nd, 2026" />
           <Step
             title="Paper Submission Deadline"
