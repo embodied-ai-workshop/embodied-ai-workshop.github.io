@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkembodied_ai_workshop=self.webpackChunkembodied_ai_workshop||[]).push([[786],{9567:function(e,f,s){f.A=s.p+"static/cover-d4b639f05f6f73fc03aabd9350f4f70f.svg"}}]);
+//# sourceMappingURL=component---src-pages-cvpr-2021-tsx-f7db50fe334e5dd500f3.js.map
