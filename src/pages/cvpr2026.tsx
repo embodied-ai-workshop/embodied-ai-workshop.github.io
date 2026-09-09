@@ -459,6 +459,367 @@ function Paper(props: {
 }
 
 let acceptedPapers = [
+  <Paper
+    title="Counterfactual Simulation for Embodied LLM Planning"
+    abstract="Large language model–guided embodied agents often rely on greedy action prediction, leading to collisions and suboptimal performance in cluttered environments. We introduce a \textbf{counterfactual simulation} framework in which agents generate multiple hypothetical action sequences, simulate their outcomes, and score them using lightweight heuristics to select the most promising sequence. Experiments in AI2-THOR navigation tasks (200 episodes, 30 scenes, 15 object categories) show that counterfactual reasoning reduces collisions by 28.4\% and improves goal completion by 11.2\% compared to greedy planning, with statistical significance at $p<0.01$."
+    authors={{
+    "Mahule Roy":[],
+    "Subhas Roy":[],
+    }}
+    affiliations={[]}
+    pdf="/papers/2026/1_Counterfactual_Simulation_fo.pdf"
+    />,
+  <Paper
+    title="Humanoid Everyday: A Comprehensive Robotic Dataset for Open-World Humanoid Manipulation"
+    abstract="From loco-motion to dextrous manipulation, humanoid robots have made remarkable strides in demonstrating complex full-body capabilities. However, the majority of current robot learning datasets and benchmarks mainly focus on stationary robot arms, and the few existing humanoid datasets are either confined to fixed environments or limited in task diversity, often lacking human-humanoid interaction and lower-body locomotion. Moreover, there are a few standardized evaluation platforms for benchmarking learning-based policies on humanoid data. In this work, we present Humanoid Everyday, a large-scale and diverse humanoid manipulation dataset characterized by extensive task variety involving dextrous object manipulation, human-humanoid interaction, locomotion-integrated actions, and more. Leveraging a highly efficient human-supervised teleoperation pipeline, Humanoid Everyday aggregates high-quality multimodal sensory data, including RGB, depth, LiDAR, and tactile inputs, together with natural language annotations, comprising 10.3k trajectories and over 3 million frames of data across 260 tasks across 7 broad categories. In addition, we conduct an analysis of representative policy learning methods on our dataset, providing insights into their strengths and limitations across different task categories. For standardized evaluation, we introduce a cloud-based evaluation platform that allows researchers to seamlessly deploy their policies in our controlled setting and receive performance feedback. By releasing Humanoid Everyday along with our policy learning analysis and a standardized cloud-based evaluation platform, we intend to advance research in general-purpose humanoid manipulation and lay the groundwork for more capable and embodied robotic agents in real-world scenarios. Our dataset, data collection code, and cloud evaluation website are made publicly available on our project website."
+    authors={{
+    "Zhenyu Zhao":[],
+    "Hongyi Jing":[],
+    "Xiawei Liu":[],
+    "Jiageng Mao":[],
+    "Abha Jha":[],
+    "Hanwen Yang":[],
+    "Rong Xue":[],
+    "Sergey Zakharov":[],
+    "Vitor Campagnolo Guizilini":[],
+    "Yue Wang":[],
+    }}
+    affiliations={[]}
+    pdf="/papers/2026/3_Humanoid_Everyday_A_Comprehe.pdf"
+    />,
+  <Paper
+    title="Physics-Steerable Video World Models for Embodied Scenario Generation"
+    abstract="Embodied agents need world models that can generate physically varied scenarios on demand, without retraining. Recent work shows that physical plausibility is linearly encoded in a frozen VideoMAE encoder at a consistent depth region called the Physics Emergence Zone (PEZ), and that Concept Activation Vectors (CAVs) can steer this representation at inference time. We extend this foundation toward a fully controllable video world model with three new primitives: pixel-space scenario output by coupling PEZ-layer steering to VideoMAE's MAE decoder, compositional control of physics and motion independently (CAV angle 86.6°, interaction norm ≤ 0.42), and temporal scheduling of physical violations across the video. A key finding is that physics is encoded uniformly across all temporal positions in VideoMAE, meaning fine-grained temporal control requires architectural changes beyond joint space-time attention. Together, these primitives enable stress-testing of embodied agents against out-of-distribution physical scenarios with no new data or retraining."
+    authors={{
+    "Nahid Alam":[],
+    }}
+    affiliations={[]}
+    pdf="/papers/2026/4_Physics_Steerable_Video_Worl.pdf"
+    />,
+  <Paper
+    title="Event-Driven Embodied Perception for Hazardous Slip Detection under Perceptual Degradation"
+    abstract="Embodied robots operating on planetary surfaces must preserve mobility when visual perception is degraded by low-angle illumination, shadowing, dust, and weak terrain texture. Under these conditions, vision-dominant traversability assessment can become unreliable, while continuous dense fusion is costly for power-limited rovers. We present an event-driven multi-modal perception framework for hazardous wheel slip detection using Spiking Neural Networks (SNNs). Exteroceptive visual observations and proprioceptive IMU and motor-current streams are encoded with Bayesian Spike Pattern Superposition (BSPS), producing an asynchronous representation that remains stable under visual noise, dropout, and temporal jitter. The detector is evaluated in a high-fidelity lunar surface simulation with Bekker-Wong terramechanics, controlled visual degradation, and simulator-derived wheel-terrain ground truth. It detects hazardous slip events with an F1-score of $0.86 \pm 0.04$. Deployed on the BrainChip Akida neuromorphic processor, the model achieves $1.2$ ms latency and $48,\mu J$ per inference. These results show that event-driven embodied perception can retain slip awareness under degraded vision while remaining compatible with planetary SWaP constraints."
+    authors={{
+    "Sylvester Kaczmarek":[],
+    }}
+    affiliations={[]}
+    pdf="/papers/2026/5_Event_Driven_Embodied_Percep.pdf"
+    />,
+  <Paper
+    title="FailGen: Frontier-Aware Semantic Data Synthesis for Embodied Manipulation"
+    abstract="Scaling up robot learning requires massive datasets that cover diverse physical interactions and semantic scenarios. While recent advances in generative models allow for synthesizing tasks and environments, and trajectory optimization enables data expansion from demonstrations, current approaches treat these as separate pipelines. This disconnect leads to a critical inefficiency: generated environments often lack physical feasibility for the robot, or fail to target the specific weaknesses of the current policy, resulting in data that is either trivial or impossible."
+    authors={{
+    "Zhirui Hu":[],
+    "Sen Cui":[],
+    "Jialin Tang":[],
+    "Jingheng Ma":[],
+    "Changshui Zhang":[],
+    "Shiji Zhou":[],
+    "Xiao Zhang":[],
+    }}
+    affiliations={[]}
+    pdf="/papers/2026/6_FailGen_Frontier_Aware_Seman.pdf"
+    />,
+  <Paper
+    title="EPM: Episodic Predictive Memory as a Latent World Model for Season-Invariant Visual Place Recognition"
+    abstract="A robot following a familiar outdoor route faces two opposite difficulties: the same place can look very different across snow, rain and so on, while distant road segments may look nearly identical. Single-image VPR descriptors can struggle because appearance changes or repeated route geometry create different kinds of ambiguity. We propose EPM (Episodic Predictive Memory), a lightweight route memory model for few-shot cross-season VPR. It combines local VLAD features, recurrent route context, and FAISS episodic retrieval. On Boreas cross-season pairs, EPM reaches 89.9% SR@25m at 538 FPS with 12.7M parameters, outperforming CosPlace by 7.7 pp and reducing per-pair variance by 6x. Frozen-representation probing shows that EPM states are more predictable under egomotion than strong visual baselines. The results suggest that EPM learns a structured latent route state, offering a lightweight bridge between episodic route memory and latent world-model ideas."
+    authors={{
+    "Jiaxin Li":[],
+    "Chen Sun":[],
+    }}
+    affiliations={[]}
+    pdf="/papers/2026/7_EPM_Episodic_Predictive_Memo.pdf"
+    />,
+  <Paper
+    title="HoMMI: Learning Whole-Body Mobile Manipulation from Human Demonstrations"
+    abstract="We present Whole-Body Mobile Manipulation Interface (HoMMI), a data collection and policy learning framework that learns whole-body mobile manipulation directly from robot-free human demonstrations. We augment UMI interfaces with egocentric sensing to capture the global context required for mobile manipulation, enabling portable, robot-free, and scalable data collection. However, naively incorporating egocentric sensing introduces a larger human-to-robot embodiment gap in both observation and action spaces, making policy transfer difficult. We explicitly bridge this gap with a cross-embodiment hand-eye policy design, including an embodiment agnostic visual representation; a relaxed head action representation; and a whole-body controller that realizes hand-eye trajectories through coordinated whole-body motion under robot-specific physical constraints. Together, these enable long-horizon mobile manipulation tasks requiring bimanual and whole-body coordination, navigation, and active perception. Project website: https://hommi-robot.github.io"
+    authors={{
+    "Xiaomeng Xu":[],
+    "Jisang Park":[],
+    "Han Zhang":[],
+    "Eric Cousineau":[],
+    "Aditya Bhat":[],
+    "Jose Barreiros":[],
+    "Dian Wang":[],
+    "Jeannette Bohg":[],
+    "Shuran Song":[],
+    }}
+    affiliations={[]}
+    pdf="/papers/2026/8_HoMMI_Learning_Whole_Body_Mo.pdf"
+    />,
+  <Paper
+    title="EmbodiedRec: Preference-Grounded World Models for Spatially-Aware Recommendation"
+    abstract="Recommendation systems traditionally operate in abstract latent spaces, divorced from the physical contexts in which users make decisions. We propose EmbodiedRec, a framework that equips an embodied agent with a Preference World Model (PWM): a structured representation that jointly captures physical scene dynamics and user preference distributions conditioned on spatial context. Rather than treating recommendation as a static lookup over interaction histories, EmbodiedRec frames it as an active navigation problem: the agent perceives its environment, maintains a spatially-evolving preference belief, and issues contextually grounded suggestions: what activity to pursue, what content to engage with, what next action to take: based on where it is and what it observes. As a preliminary validation, we augment MovieLens-100K with simulated spatial context and show that even a simple context-aware model outperforms context-free BPR by +5.0% NDCG@10 and raises Spatial Preference Correlation from near-zero to 0.393, motivating the full embodied framework."
+    authors={{
+    "Aastha Valecha":[],
+    }}
+    affiliations={[]}
+    pdf="/papers/2026/11_EmbodiedRec_Preference_Grou.pdf"
+    />,
+  <Paper
+    title="CLEAR: Closed-Loop Reinforcement Learning at Scale for End-to-End Autonomous Driving"
+    abstract="Existing VLA-based policies for E2E-AD largely adopts imitation learning (IL) as the primary approach, i.e., the learning objective typically is only to optimize certain distance metrics (e.g., L2 error) w.r.t. ground-truth expert trajectories. However, the distribution shift between open-loop training and closed-loop inference often leads to compromised policies, exhibiting suboptimal performance in closed-loop planning. To address this, we propose CLEAR, a system that effectively enables and efficiently performs closed-loop RL finetuning of VLA policies for E2E-AD. We first pretrain CLEAR on a large set of expert trajectories using imitation learning, equipping it with baseline driving capabilities. Then, we freeze the VLA agent except the action head, which outputs driving actions, on top of which we finetune with Proximal Policy Optimization (PPO). We also design a novel heterogeneous finetuning pipeline with which we're able to dramatically scale up the number of parallel simulator environments and PPO updates, which lead to superior results."
+    authors={{
+    "Yunxiao Shi":[],
+    "Hong Cai":[],
+    "Mohammad Ghavamzadeh":[],
+    "Fatih Porikli":[],
+    }}
+    affiliations={[]}
+    pdf="/papers/2026/12_CLEAR_Closed_Loop_Reinforce.pdf"
+    />,
+  <Paper
+    title="Emotion-Conditioned Short-Horizon Human Pose Forecasting with a Lightweight Predictive World Model"
+    abstract="Emotional signals critically influence human motion but are often overlooked in pose prediction. We propose a lightweight, autoregressive world model that integrates facial emotion embeddings with pose keypoints via a learnable gating mechanism[1-5]. Using a two-layer LSTM, our model performs 15-step rolling prediction. Experiments on controlled and naturalistic datasets show that normalized gating significantly improves accuracy in emotion-driven sequences. Counterfactual perturbations further prove that emotion embeddings serve as causal conditional signals, directly shifting predicted trajectories. This demonstrates the feasibility of emotion-conditioned world models for human-centric embodied AI."
+    authors={{
+    "Jingni Huang":[],
+    }}
+    affiliations={[]}
+    pdf="/papers/2026/13_Emotion_Conditioned_Short_H.pdf"
+    />,
+  <Paper
+    title="Keep the Flow: Continuous High-Precision Bimanual Manipulation in Constrained Spaces"
+    abstract="Recent robotic datasets have scaled generalist policies, but most lack strict metric constraints for precise object placement. To address this, we introduce Keep the Flow, a real-world bimanual humanoid dataset explicitly designed for spatially constrained manipulation. We collect these demonstrations via VR teleoperation on a Unitree G1 humanoid equipped with three-fingered Dex3-1 hands, covering both Single-row and Multi-row task formations. To ensure high-precision annotations, an automated overhead RGB-D verification loop filters out demonstrations whose final placement error exceeds 2cm. Furthermore, we develop an action-state-preserving visual augmentation pipeline that combines SAM2-based object recoloring with workspace grid removal."
+    authors={{
+    "Hojae Jeong":[],
+    "JuHyoung Lee":[],
+    "Eunwoo Song":[],
+    "Jaerim Kim":[],
+    "Heewon Kim":[],
+    }}
+    affiliations={[]}
+    pdf="/papers/2026/14_Keep_the_Flow_Continuous_Hi.pdf"
+    />,
+  <Paper
+    title="Simulation as Spatial Imagination for Embodied Visual Reasoning"
+    abstract="Vision-language models (VLMs) enable embodied agents to interpret natural language instructions and reason about visual scenes, but often produce actions that are semantically plausible yet physically infeasible. We propose a hybrid framework that combines retrieval of structured physical constraints with physics-based simulation, treating simulation as spatial imagination for pre-execution feasibility verification. Given an image and instruction, the system retrieves task-relevant feasibility rules and validates candidate actions in simulation to assess geometric and kinematic consistency. We evaluate on tabletop manipulation tasks involving containment, stability, occlusion, and reachability. Simulation significantly reduces false-positive feasibility predictions compared to language-only and retrieval-augmented baselines."
+    authors={{
+    "Kornelia Skorupińska":[],
+    "Rafal Staszak":[],
+    "Mikołaj Zieliński":[],
+    "Dominik Belter":[],
+    "Piotr Skrzypczynski":[],
+    }}
+    affiliations={[]}
+    pdf="/papers/2026/15_Simulation_as_Spatial_Imagi.pdf"
+    />,
+  <Paper
+    title="PhysFlow: Physics-Grounded Visual World Models via Flow Matching and Lagrangian Neural Networks"
+    abstract="Learning predictive world models for visual robotics requires coupling high-dimensional visual perception with physically plausible dynamics. We present PhysFlow, a hybrid world model that integrates three core components: a frozen DINOv2 ViT encoder for robust visual feature extraction; a conditional flow-matching network that estimates residual external generalized forces; and a Lagrangian Neural Network that enforces energy-based forward dynamics with a guaranteed positive-definite mass matrix. A key challenge in training such hybrid systems is numerical instability arising from the circular dependency between the force estimator and the physics solver. We mitigate this through a staged pretraining protocol and a softplus-constrained Cholesky parameterization of the mass matrix. On the DeepMind Control Suite Hopper task, our model achieves a 93 % reduction in one-step visual latent prediction error, outperforms identity baselines at 10-step horizons, and maintains bounded state-space predictions across 50-step horizons where alternative neural approaches often diverge."
+    authors={{
+    "Prakrut Kotecha":[],
+    }}
+    affiliations={[]}
+    pdf="/papers/2026/16_PhysFlow_Physics_Grounded_V.pdf"
+    />,
+  <Paper
+    title="Reading Between the Lines: Teaching Open-Source Embodied Agents to Resolve Vague Human Instructions"
+    abstract="Open-source large language models (LLMs) suffer from catastrophic performance collapse (19–58% success rate) when faced with ambiguous, human-like instructions characterized by implicit pronouns and noisy dialogue. To bridge this gap, we introduce FAST-PLAN, a scalable, annotation-free framework that synthesizes training data by identifying and refining a model’s own planning failures. By fine-tuning open source backbones (Llama-3.2-Inst., Qwen-3-4B-Inst.) on these 1.8K failure-driven trajectories, we achieve a +50 to +80 percentage points success rate increase on REI-Bench and demonstrate zero-shot generalization to the CLARA (+6.14 F1) and AmbiK, two out-of-distribution embodied ambiguity benchmarks."
+    authors={{
+    "Souradeep Mukhopadhyay":[],
+    "Vedang Vasant Avaghade":[],
+    "Ali Payani":[],
+    "Gaowen Liu":[],
+    "Jayanth Srinivasa":[],
+    "Chitta Baral":[],
+    }}
+    affiliations={[]}
+    pdf="/papers/2026/17_Reading_Between_the_Lines_T.pdf"
+    />,
+  <Paper
+    title="Learning Visual Feature-Based World Models via Residual Latent Action"
+    abstract="World models predict future transitions from observations and actions. Existing works predominantly focus on image generation only. Visual feature-based world models, on the other hand, predict future visual features instead of raw video pixels, offering a promising alternative that is more efficient and less prone to hallucination. However, current feature-based approaches rely on direct regression, which leads to blurry or collapsed predictions in complex interactions, while generative modeling in high-dimensional feature spaces still remains challenging. In this work, we discover that a new type of latent action representation, which we refer to as *Residual Latent Action* (RLA), can be easily learned from DINO residuals. We also show that RLA is predictive, generalizable, and encodes temporal progression. Building on RLA, we propose *RLA World Model* (RLA-WM), which predicts RLA values via flow matching. RLA-WM outperforms both state-of-the-art feature-based and video-diffusion world models on simulation and real-world datasets, while being orders of magnitude faster than video diffusion. Furthermore, we develop two robot learning techniques that use RLA-WM to improve policy learning. The first one is a minimalist world action model with RLA that learns from actionless demonstration videos. The second one is the first visual RL framework trained entirely inside a world model learned from offline videos only, using a video-aligned reward and no online interactions or handcrafted rewards."
+    authors={{
+    "Xinyu Zhang":[],
+    "Zhengtong Xu":[],
+    "Yutian Tao":[],
+    "Yeping Wang":[],
+    "Yu She":[],
+    "Abdeslam Boularias":[],
+    }}
+    affiliations={[]}
+    pdf="/papers/2026/18_Learning_Visual_Feature_Bas.pdf"
+    />,
+  <Paper
+    title="AB-DualVLA: Task-Routed Cloud–Edge Vision–Language–Action Policies"
+    abstract="We study how cloud-side and edge-side VLAs can be organized into a task-routed manipulation system. AB-DualVLA (Attention-Bottleneck DualVLA) keeps Pi0 and SmolVLA frozen, trains a token-level fusion student path over extracted intermediate tokens, and selects among paths at the task level. On LIBERO-Object (10 tasks) the system reaches 89.5% closed-loop success at 10 episodes per task per seed, averaged over multiple seeds. The 79M student attains low open-loop fit, but this does not transfer to standalone closed-loop performance; the student is therefore used as one of the routed paths rather than a replacement for either backbone. We report the experimental results in open-loop fit, latency, and fallback behavior metrics."
+    authors={{
+    "Yuhe Wen":[],
+    "Jaeho Jung":[],
+    "Quan Gan":[],
+    "Jehwan Choi":[],
+    "Duy-Linh Nguyen":[],
+    "Kang-Hyun Jo":[],
+    }}
+    affiliations={[]}
+    pdf="/papers/2026/19_AB_DualVLA_Task_Routed_Clou.pdf"
+    />,
+  <Paper
+    title="Test-Time Scaling for World Action Models via Zero-Shot Geometric Verification"
+    abstract="World Action Models (WAMs) jointly predict future video frames and actions from multi-view observations, but their generations can contain geometrically implausible scenes, degrading action quality. For WAMs, on-the-fly rollout selection often relies on model-specific value heads, limiting cross-model reuse. To address this, we propose a training-free, model-agnostic rollout verifier that repurposes VGGT as a frozen geometric evaluator. It scores WAM rollouts using a cross-view depth reprojection consistency error and selects the most geometrically plausible candidate via Best-of-N test-time scaling. Our key insight is that if a world model faithfully captures 3D structure, its multi-view predictions must be geometrically consistent; violations can indicate hallucination. On RoboCasa with Cosmos Policy, our verifier achieves an AUROC of 0.736 for single-step failure detection, substantially outperforming the co-trained value head. Consequently, our test-time scaling improves overall task success rates across various benchmarks and WAM baselines."
+    authors={{
+    "Zesen Zhao":[],
+    "Minkyoung Cho":[],
+    "Hui Shen":[],
+    "Boyuan Zheng":[],
+    "Kunxiao Gao":[],
+    "Yulong Cao":[],
+    "Zhuoqing Mao":[],
+    }}
+    affiliations={[]}
+    pdf="/papers/2026/20_Test_Time_Scaling_for_World.pdf"
+    />,
+  <Paper
+    title="SeedWorld: Generative Simulation Automation for Compositional Robotic Skill Generalization via Seed Demonstrations"
+    abstract="Simulation is an important paradigm for training robots on diverse tasks. However, building useful simulation tasks still requires substantial human effort, such as teleoperation. Existing data generation paradigms face a dilemma: augmentation methods based on static datasets are limited by the semantic boundaries of the original data, while unconstrained generative exploration often suffers from low efficiency. We propose SeedWorld, a multi-agent simulation framework that expands a single human demonstration into composable simulation tasks for robot skill learning (Fig.1). SeedWorld coordinates task-proposal, task-construction, skill-learning, and feedback agents to generate related task variants, instantiate executable compositional tasks, train robot skills, and improve low-success tasks. Experiments show that SeedWorld generates diverse and physically plausible tasks from very few seeds, enabling compositional skill generalization across different scenes with minimal human input."
+    authors={{
+    "Jialin Tang":[],
+    "Sen Cui":[],
+    "Zhirui Hu":[],
+    "Tianyuan Chen":[],
+    "Bangde Cao":[],
+    "Jingheng Ma":[],
+    "Changshui Zhang":[],
+    "Shiji Zhou":[],
+    "Xiao Zhang":[],
+    }}
+    affiliations={[]}
+    pdf="/papers/2026/21_SeedWorld_Generative_Simula.pdf"
+    />,
+  <Paper
+    title="Do VLMs Know What to Do After Failed Actions? A Diagnostic Probe for Embodied Error Recovery"
+    abstract="Embodied agents must not only execute instructions, but also recover after failed actions. We study whether vision-language models (VLMs) can diagnose what went wrong and choose the next corrective action under ambiguous before--after visual evidence. We introduce a compact AI2-THOR-based diagnostic probe of 240 manually constructed and audited post-failure examples across four failure mechanisms: wrong view, wrong object or unrelated action, unsatisfied precondition/order, and task-appropriate but ineffective execution. Each example requires two outputs: a failure category and a one-step recovery action. We evaluate three hosted VLM endpoints under four input conditions: full before--after context, after-only context, text-only context, and a temporal swap-test. The results reveal three diagnostic effects. First, models exhibit a diagnosis--action gap: failure-category prediction is often easier than recovery-action selection. Second, text-only performance exposes language-prior shortcuts in some wrong-object cases. Third, temporal swapping sharply degrades wrong-object recovery, showing that temporal direction matters for embodied error recovery."
+    authors={{
+    "Tianxin Huang":[],
+    "Jinrui Mai":[],
+    "Jiayu Chen":[],
+    }}
+    affiliations={[]}
+    pdf="/papers/2026/22_Do_VLMs_Know_What_to_Do_Aft.pdf"
+    />,
+  <Paper
+    title="Fine-tuning Robotic Foundation Model Using Dynamic Scene Generation"
+    abstract="Continuous-state robotic manipulation requires an agent to interpret language goals, estimate object states, and execute physically valid actions toward fine-grained targets. However, training data for such tasks is sparse: collecting demonstrations for every object, scene, and target state is expensive, and synthetic data is useful only when it remains executable. In this paper, we summarize our two-year participation in the ARNOLD Challenge, hosted as part of the CVPR Embodied AI Workshop~\cite{embodiedai2026}. In this paper, we present the methods developed for the ARNOLD Challenge on continuous-state robotic manipulation. \textbf{PSASI} densifies supervision over continuous object states through state interpolation and phase-specific control. \textbf{FRFM} further expands the training distribution with physics-verified dynamic scene generation for foundation-model fine-tuning. Our key insight is that performance improves not merely by increasing data volume, but by expanding the training distribution in a manipulation-aware way: separating action phases, interpolating continuous states, and generating executable scenes for foundation-model fine-tuning."
+    authors={{
+    "Sungyong Park":[],
+    "Sangmin Lee":[],
+    "Dowon Kim":[],
+    "Heewon Kim":[],
+    }}
+    affiliations={[]}
+    pdf="/papers/2026/23_Fine_tuning_Robotic_Foundat.pdf"
+    />,
+  <Paper
+    title="Agentic Decomposition for Reasoning-Oriented Real-World Robot Manipulation"
+    abstract="Generalist vision-language-action (VLA) models provide strong visuomotor priors, but reasoning-oriented robot manipulation also requires task interpretation, scene grounding, atomic skill decomposition, progress monitoring, and recovery. We introduce AgentVLA, an agentic task interface that treats a VLA model as a reusable low-level executor inside a tool-augmented robot system. AgentVLA converts multi-view observations and task instructions into scene-grounded atomic-skill context, invokes tools for grounding and diagnosis, and conditions the executor on explicit task-stage information while keeping the robot-control protocol unchanged. We validate this design on the ManipArena Challenge at the CVPR 2026 Embodied AI Workshop, where our system achieved the highest success rate in the preliminary evaluation across five bimanual manipulation tasks. Our analysis further shows that noisy demonstrations can teach premature task completion, while spatial-layout shifts can induce brittle geometric priors. These failures motivate separating task reasoning from low-level action generation by atomizing long-horizon tasks into grounded, reusable, and verifiable skill primitives around a shared VLA executor."
+    authors={{
+    "Yutong Lin":[],
+    "Zhenxuan Fan":[],
+    "Yuqian Yuan":[],
+    "Wentong Li":[],
+    "Wenqiao Zhang":[],
+    "Changxu Cheng":[],
+    "Tao Wang":[],
+    "Juncheng Li":[],
+    "Jun Xiao":[],
+    "Siliang Tang":[],
+    "Yueting Zhuang":[],
+    }}
+    affiliations={[]}
+    pdf="/papers/2026/24_Agentic_Decomposition_for_R.pdf"
+    />,
+  <Paper
+    title="Towards Thermal-Aware Humanoid Locomotion: Estimating Unobserved Winding Temperatures"
+    abstract="Sustained humanoid locomotion is bounded by progressive torque degradation from motor heating, and failure is driven by the unobservable winding temperature rather than the measurable housing. First-order models cannot represent the winding state, while standard second-order LPTNs assume embedded winding sensors and treat each actuator in isolation—both invalid on humanoid servo-integrated actuators. We adapt the coupled second-order LPTN with physically-informed regularizers derived from non-destructive teardown of commercial servos and an inter-motor coupling term for shared housings and PLA-frame conduction, identified from only the integer-quantized housing temperature. On the ToddlerBot platform with 30 actuators, the identified model recovers the unobserved winding state with physically consistent behavior, providing a foundation for thermal-aware locomotion policies."
+    authors={{
+    "Eunwoo Song":[],
+    "Sangmin Lee":[],
+    "Yeonji Kim":[],
+    "Heewon Kim":[],
+    }}
+    affiliations={[]}
+    pdf="/papers/2026/25_Towards_Thermal_Aware_Human.pdf"
+    />,
+  <Paper
+    title="SO-101 Bench: Measuring the Gap Between Semantic and Geometric Competence in Vision-Language-Action Models"
+    abstract="Vision-language-action (VLA) models have become increasingly effective general-purpose robot policies, but it remains unclear how well their semantic competence transfers to precise geometric manipulation under novel objects and embodiments. We present SO-101 Bench, a compact benchmark for language-conditioned tabletop manipulation with an SO-101 arm. The benchmark evaluates four tasks across 56 household objects spanning seen, unseen/seen-class, and unseen/unseen-class regimes. We collect over 4,000 teleoperated demonstrations (roughly 20 hours), fine-tune GR00T-N1.6-3B, and evaluate the resulting policy in the real world. While the policy reaches 97.4% success on the simplest one-object bin task, performance degrades sharply under spatial constraints, clutter, and novelty, falling to 6.5% on the four-object bin task and 6.3\% on the between task for fully unseen objects. Failure analysis suggests the main bottleneck is not instruction grounding, but geometric execution: imprecise grasps, poor grasp strategies for unfamiliar shapes, weak recovery, and fragile spatial composition. We also preview the benchmark’s Isaac Lab extension for scalable real-to-sim evaluation."
+    authors={{
+    "Truman Hickok":[],
+    }}
+    affiliations={[]}
+    pdf="/papers/2026/26_SO_101_Bench_Measuring_the_.pdf"
+    />,
+  <Paper
+    title="PRISM-World: Teaching Video World Models the Physics of Retail Environments"
+    abstract="Text-conditioned video diffusion models such as Cosmos-Predict2 act as world models capable of rolling out plausible future frames from a single observation, but they are trained on broad internet video and lack the domain priors required for embodied retail settings—structured shelves, dense shopper traffic, and the rigid-object physics that govern carts, baskets, and produce crates. We address this gap on two fronts. (i) PRISM-World, a curated exo-centric retail-video dataset of 15,115 atomic-action-captioned 5.8 s clips derived from 1,093 multi-camera 4K recordings (≈437 h) of five retail stores, with trajectory and atomic-action labels auto-generated by a large vision-language model. (ii) A LoRA recipe that adapts Cosmos-Predict2-2B-Video2World to PRISM-World by training only ≈7 M parameters (0.35% of the 2 B-parameter DiT) for ∼3.6 h on 8×H100. On the full 757-clip held-out test split the adapted model reduces Fréchet Video Distance from 11.91 to 8.98 (-24.6%) and LPIPS by -12.2 to -19.1% at horizons from 0.5 to 5.5 s. Qualitatively, the adapted rollouts execute the prompted action, preserve actor identity, and respect fixed-camera continuity and basic object physics that the unadapted baseline violates."
+    authors={{
+    "Amirreza Rouhi":[],
+    "Rajat Aggarwal":[],
+    "Parikshit Sakurikar":[],
+    "Anoop M. Namboodiri":[],
+    "Sashi P Reddi":[],
+    }}
+    affiliations={[]}
+    pdf="/papers/2026/27_PRISM_World_Teaching_Video_.pdf"
+    />,
+  <Paper
+    title="Trajectory-aware Success and Failure Experience Retrieval for VLM Agent"
+    abstract="Vision-language models have recently been used as embodied agents for zero-shot task execution, but they still struggle to reuse past experiences in unseen environments. Existing memory-based methods often retrieve experiences using task instructions, which may not reflect the agent’s current execution trajectory during replanning. To address this, we propose Trajectory-aware Experience Retrieval for VLM Agents, which summarizes text- and image-grounded success/failure experiences into generalized rules and retrieves trajectory-relevant rules during replanning. TERA incorporates these rules into the VLM prompt, using diverse, unpaired success and failure experiences as structural guidance and to avoid repeated mistakes. On EmbodiedBench’s EB-Manipulation and EB-Habitat, TERA improves performance by up to 10.4% and 14.0%, respectively, demonstrating the complementary benefit of success and failure experiences."
+    authors={{
+    "Somin Lee":[],
+    "Jinsik Bang":[],
+    "Taehwan Kim":[],
+    }}
+    affiliations={[]}
+    pdf="/papers/2026/28_Trajectory_aware_Success_an.pdf"
+    />,
+  <Paper
+    title="Improving VLA Workspace Randomization Robustness for Industrial Pick-and-Place via Lightweight Residual Reinforcement Learning"
+    abstract="Vision-language-action (VLA) models have recently demonstrated strong generalization across robotic manipulation tasks. However, many VLAs remain brittle to variations in initial workspace configurations, limiting their applicability in industrial settings. We investigate improving VLA robustness for industrial pick-and-place using lightweight residual reinforcement learning (RL). Instead of finetuning the base VLA, we learn a small residual multi-layer perceptron (MLP) policy that edits actions generated by a frozen VLA policy. We further investigate several design choices for stable residual learning, including curriculum-based domain randomization, network initialization, reward structure, and residual observation spaces. Using a representative industrial pipe sorting task in IsaacLab with the GR00T N1 VLA, we demonstrate that residual RL substantially improves robustness and behavioral diversity under increasing workspace randomization while requiring only a fractional increase in parameter count."
+    authors={{
+    "Siva Kailas":[],
+    "Shalin Jain":[],
+    "Harish Ravichandar":[],
+    }}
+    affiliations={[]}
+    pdf="/papers/2026/29_Improving_VLA_Workspace_Ran.pdf"
+    />,
+  <Paper
+    title="Efficient Sim-to-Real Transfer of World-Action Models from Synthetic Priors"
+    abstract="Bridging the sim-to-real gap is a core challenge in deploying learned manipulation policies. World-action models show remarkable ability in modeling environment dynamics. These models jointly predict future visual observations and robot actions within a unified generative framework. We argue this modeling capability is essential for effective sim-to-real transfer. To demonstrate this, we build upon Cosmos Policy, a video diffusion model adapted for visuomotor control. We construct simulation environments with extensive domain randomization, whereas demonstrations are then generated using the AnyTask motion planning pipeline. We evaluate our approach across object lifting, drawer opening, and pick-and-place tasks using only about 800 synthetic demonstrations per task. Ultimately, our policy achieves zero-shot RGB sim-to-real transfer on a Franka Research 3, attaining a 35\% average success rate. To our knowledge, this represents the first successful sim-to-real transfer of a world-action model for robotic manipulation."
+    authors={{
+    "Zixing Wang":[],
+    "Jinghuan Shang":[],
+    "Yafei Hu":[],
+    "Ran Gong":[],
+    "Xiaohan Zhang":[],
+    "Karl Schmeckpeper":[],
+    }}
+    affiliations={[]}
+    pdf="/papers/2026/30_Efficient_Sim_to_Real_Trans.pdf"
+    />,
+  <Paper
+    title="SpatialBench-R: Evaluating Vision-Language Models on Robot-Relevant Spatial Reasoning for Tabletop Manipulation"
+    abstract="VLMs are increasingly deployed as planners in manipulation pipelines, yet their configuration-dependent spatial reasoning (reachability, occlusion, and action effects) remains poorly understood. We present SpatialBench-R (Robotics), a benchmark of 1,632 QA pairs across six robot-relevant task types from 300 synthetic 3D tabletop scenes. We evaluate GPT-5.5, Qwen3-VL-8B, and Gemini-2.5-Flash under image-only, coordinate-augmented, and scene-graph prompting, and introduce an intervention protocol that perturbs robot configurations to measure whether models update their spatial judgments. Under image-only prompting, reach-zone estimation and action-effect prediction are near chance. Structured prompts yield large but task-dependent gains, exposing a gap between static scene description and configuration-dependent inference."
+    authors={{
+    "Mengti Sun":[],
+    "Bowen Jiang":[],
+    "Minxi Duan":[],
+    "Camillo Jose Taylor":[],
+    }}
+    affiliations={[]}
+    pdf="/papers/2026/31_SpatialBench_R_Evaluating_V.pdf"
+    />,
+  <Paper
+    title="Where Do Affordances Crystallize? Video vs. Image Self-Supervised Encoders for Embodied Perception"
+    abstract="Self-supervised video models are strong backbones for robotic perception. We probe 25 layer positions of architecturally matched ViT-L encoders (V-JEPA 2, V-JEPA 2.1, DINOv2) on the UMD Part Affordance Dataset and show that video SSL models crystallize affordance signal at layer 19—four layers earlier than DINOv2 (image SSL, layer 23), suggesting a consistent effect of temporal predictive objectives on representation depth. Both V-JEPA variants share the same peak depth, yet V-JEPA 2.1's intermediate-layer supervision yields markedly stronger early-layer representations (layer 2 mAP: $92.2\%$ vs. $85.0\%$ for V-JEPA 2). Head ablation at each peak layer further reveals a sparse set of attention heads that concentrate the affordance signal; keeping only the top-3 heads achieves a $5.3\times$ attention compute reduction with $\leq 0.1\%$ mAP loss."
+    authors={{
+    "Abrar Zahin Raihan":[],
+    "Aurchi Chowdhury":[],
+    }}
+    affiliations={[]}
+    pdf="/papers/2026/32_Where_Do_Affordances_Crysta.pdf"
+    />,
 ];
 
 const Time = (props: { time: string }) => (

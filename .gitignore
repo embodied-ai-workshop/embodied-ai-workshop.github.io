@@ -60,6 +60,11 @@ typings/
 .cache/
 public
 
+# scripts/papers/ derived output (see scripts/papers/README.md)
+scripts/papers/tmp/
+__pycache__/
+*.pyc
+
 # Mac files
 .DS_Store
 
